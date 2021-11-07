@@ -21,7 +21,7 @@ When(/^I execute a (.*) request to (.*) endpoint$/, async function (verb, endpoi
     })
 })
 
-Then(/^the status code should be (\d+) (.*)$/, function () {
+Then(/^the status code should be (\d+) (.*)$/, function (statusCode, statusText) {
     expect(_response.status).to.equal(statusCode)
     expect(_response.statusText).to.equal(statusText)
 })

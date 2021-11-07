@@ -4,7 +4,7 @@ import CredentialsManager from '../../common/api/credentials.manager'
 class HttpRequestManager{
 
     static makeRequest(verb, uri, data = '', authCredentials = 'AdminCredentials') {
-        let instance = CredentialsManager.getCredentials(authCredentials);
+        let instance = axios.create(CredentialsManager.getCredentials(authCredentials));
 
         switch(verb) {
             case "GET":
