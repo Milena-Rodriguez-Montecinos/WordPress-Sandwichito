@@ -1,0 +1,30 @@
+{
+    "Valid": {
+        "POST": {
+            "CreateUser": {
+                "username": "Jose Canseco Canales",
+                "email": "jose_canseco_canales@email.com",
+                "password": "canseco2468013579Jose"
+            },
+            "UpdateUser": {
+                "first_name": "Joselito",
+                "last_name": "Cansequito",
+                "email": "joselito_cansecus@email.com"
+            }
+        }, 
+        "DELETE": {
+            "DeleteUser": {
+                "force": true,
+                "reassign": 1                
+            }
+        }
+    },
+    "Invalid": {
+        "POST": {
+            
+        }, 
+        "DELETE": {
+
+        }
+    }
+}

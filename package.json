@@ -4,7 +4,7 @@
   "description": "",
   "main": "babel.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cucumber-js --require-module @babel/register --format @cucumber/pretty-formatter --format message:./reports/report.json --publish-quiet"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,17 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Milena-Rodriguez-Montecinos/WordPress-Sandwichito/issues"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "chai": "^4.3.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/register": "^7.16.0",
+    "@cucumber/cucumber": "^7.3.1",
+    "@cucumber/pretty-formatter": "^1.0.0-alpha.1"
   }
 }

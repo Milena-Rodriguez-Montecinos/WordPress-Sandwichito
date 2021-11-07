@@ -1,0 +1,16 @@
+{
+    "AdminCredentials" : {
+        "baseURL": "http://192.168.33.30:8080",
+        "auth": {
+            "username": "edwin_patex",
+            "password": ""
+        }
+    },
+    "InvalidCredentials" : {
+        "baseURL": "http://192.168.33.30:8080",
+        "auth": {
+            "username": "edwin_patex",
+            "password": "12345aeiou"
+        }
+    }
+}
