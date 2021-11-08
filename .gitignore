@@ -5,6 +5,9 @@ package-lock.json
 # testing
 /coverage
 
-#files generated
+# files generated
 log-test.log
 test-report.html
+
+# reports
+/reports
