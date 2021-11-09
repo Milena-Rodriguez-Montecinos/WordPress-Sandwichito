@@ -39,4 +39,24 @@ When(/^Executes a (.*) request to (.*) endpoint$/, async function (verb, endpoin
 Then(/^The status code should be (\d+) (.*)$/, function (statusCode, statusText) {
     expect(_response.status).to.equal(statusCode)
     expect(_response.statusText).to.equal(statusText)
+
+})
+
+Then(/^The category created updated$/, function () {
+    expect(_response.data.id).not.to.be.undefined;
+    this.id = _response.data.id;
+})
+
+Then(/^The status code should be (\d+) (.*)$/, function (statusCode, statusText) {
+    if(_response !== undefined){
+        expect(_error.response.status).to.equal(statusCode);
+        expect(_error.response.statusText).to.equal(statusText);
+        expect(_error.response.data).to.deep.include(errors.Invalid);
+    }
+    else{
+        expect(_response.status).to.equal(statusCode);
+        expect(_response.statusText).to.equal(statusText);
+        expect(_response.data).to.equal(errors.Invalid);
+    }
+
 })

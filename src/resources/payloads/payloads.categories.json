@@ -4,13 +4,13 @@
             "CreateCategory": {
                 "name": "Mai"
             },
-            "UpdateUser": {
+            "UpdateCategory": {
                 "id": "8741914",
                 "name": "Suki"
             }
         }, 
         "DELETE": {
-            "DeleteUser": {
+            "DeleteCategory": {
                 "id": "8741914",
                 "force": true    
             }
