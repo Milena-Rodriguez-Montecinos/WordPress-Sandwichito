@@ -10,7 +10,22 @@ Given(/^A valid credentials$/, function () {
     validCredentials = true
 })
 
+Given(/^I have a payload$/, function (table){
+    data = payloads.PostsById.Invalid[table.rowsHash().payload]
+})
+
 When(/^Executes a (.*) request to (.*) endpoint$/, async function (verb, endpoint) {
+    let _endpoint = '';
+
+    switch(verb){
+        case 'POST':
+            _endpoint = endpoint.replace('{id}', this.id);
+            break;
+        default:
+            _endpoint = endpoint;
+            break;
+    }
+
     await HttpRequestManager.makeRequest(verb, endpoint, data, "AdminCredentials", "http://192.168.33.80:8080")
     .then(function (response) {
         _response = response;

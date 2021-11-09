@@ -1,0 +1,27 @@
+{
+    "Valid": {
+        "POST": {
+            "CreateCategory": {
+                "name": "Mai"
+            },
+            "UpdateUser": {
+                "id": "8741914",
+                "name": "Suki"
+            }
+        }, 
+        "DELETE": {
+            "DeleteUser": {
+                "id": "8741914",
+                "force": true    
+            }
+        }
+    },
+    "Invalid": {
+        "POST": {
+            
+        }, 
+        "DELETE": {
+
+        }
+    }
+}
