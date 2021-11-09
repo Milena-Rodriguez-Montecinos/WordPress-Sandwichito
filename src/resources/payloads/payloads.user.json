@@ -15,7 +15,7 @@
         "DELETE": {
             "DeleteUser": {
                 "force": true,
-                "reassign": 1                
+                "reassign": 1
             }
         }
     },
