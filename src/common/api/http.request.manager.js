@@ -10,9 +10,9 @@ class HttpRequestManager{
             case "GET":
                 return instance.get(instance.defaults.baseURL + "/wp-json/" + uri, instance.defaults.auth);
             case "POST":
-                return instance.post(instance.defautls.baseURL + "/wp-json/" + uri, data, instance.defaults.auth)
-            case "DELETE":   
-                return instance.delete(instace.defaults.baseURL + "/wp-json/" + uri, data, instance.defaults.auth) 
+                return instance.post(instance.defaults.baseURL + "/wp-json/" + uri, data, instance.defaults.auth);
+            case "DELETE": 
+                return instance.delete(instance.defaults.baseURL + "/wp-json/" + uri, {data: { force: data.force, reassign: data.reassign }}, instance.defaults.auth); 
         }
     }
 }
