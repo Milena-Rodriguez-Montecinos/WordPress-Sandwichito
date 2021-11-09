@@ -1,0 +1,4 @@
+{
+    "users" : "wp/v2/users",
+    "usersById" : "wp/v2/users/{id}"
+}
