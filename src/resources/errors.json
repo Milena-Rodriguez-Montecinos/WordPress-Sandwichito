@@ -1,0 +1,8 @@
+{
+    "InvalidParam" : {
+        "code": "rest_invalid_param"
+    },
+    "MissingParam" : {
+        "code": "rest_missing_callback_param"
+    }    
+}
