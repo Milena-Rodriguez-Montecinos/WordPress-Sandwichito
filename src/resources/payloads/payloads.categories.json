@@ -1,0 +1,31 @@
+{
+    "Valid": {
+        "POST": {
+            "CreateCategory": {
+                "name": "Mai"
+            },
+            "UpdateCategory": {
+                "name": "Suki"
+            }
+        }, 
+        "DELETE": {
+            "DeleteCategory": {
+                "id": "8",
+                "force": true    
+            }
+        }
+    },
+    "Invalid": {
+        "CreateCategory": {
+            "id": "1"
+        },
+        "UpdateCategory": {
+            "id": "2"
+        },
+        "DELETE": {
+            "DeleteCategory": {
+                "id": "8"  
+            }
+        }
+    }  
+}
