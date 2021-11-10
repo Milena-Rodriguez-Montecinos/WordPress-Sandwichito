@@ -1,0 +1,28 @@
+{
+    "Valid": {
+        "POST": {
+            "title": "test title",
+            "Content": "test content",
+            "excerpt": "test excerpt"
+        }, 
+        "PUT":{
+            "title": "update title",
+            "Content": "update content",
+            "excerpt": "update excerpt"
+        },
+        "DELETE": {
+            "DeletePost": {
+                "force": true,
+                "reassign": 1                
+            }
+        }
+    },
+    "Invalid": {
+        "POST": {
+            
+        }, 
+        "DELETE": {
+
+        }
+    }
+}

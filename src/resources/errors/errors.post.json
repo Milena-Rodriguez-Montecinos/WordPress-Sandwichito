@@ -1,0 +1,16 @@
+{
+    "empty_content": {
+        "code": "empty_content",
+        "message": "Content, title, and excerpt are empty.",
+        "data": {
+            "status": 400
+        }
+    },
+    "rest_post_invalid_id": {
+        "code": "rest_post_invalid_id",
+        "message": "Invalid post ID.",
+        "data": {
+            "status": 404
+        }
+    }
+}    
