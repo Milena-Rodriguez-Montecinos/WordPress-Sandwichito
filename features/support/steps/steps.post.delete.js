@@ -8,7 +8,7 @@ let _response = '';
 let data = '';
 let _endpoint = '';
 
-Given(/^user wants to delete a post with the required attributes$/, function (dataTable) {
+Given(/^user wants to delete a post with an identifier$/, function (dataTable) {
     validCredentials = true
 });
 

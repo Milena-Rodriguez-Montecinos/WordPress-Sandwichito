@@ -25,7 +25,7 @@ Then the post is update OK with code 200
 @Posts-Crud @Posts-delete
 Scenario: DELETE WITH ALL REQUIRED FIELDS IS SUCCEFUL
 
-Given user wants to delete a post with the required attributes
+Given user wants to delete a post with an identifier
     | payload | DELETE |
 When user delete the post a DELETE request to wp/v2/posts/{id} endpoint
 Then the post is delete OK with code 200
