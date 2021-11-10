@@ -4,7 +4,7 @@ import endpoints from '../../../src/resources/endpoints.json'
 import payloads from '../../../src/resources/payloads/payloads.user.json'
 import { expect } from 'chai';
 
-Before({tags: "@ReadById or @Update or @Delete"}, async function () {
+Before({tags: "@ReadById or @Update or @Delete or @UsersReadById-N or @UsersUpdate-N or @UsersDelete-N"}, async function () {
     let _response = ''
     await HttpRequestManager.makeRequest('POST', endpoints.users, payloads.Valid.POST.CreateUser)
     .then(function (response) {
@@ -19,16 +19,19 @@ Before({tags: "@ReadById or @Update or @Delete"}, async function () {
     this.id = _response.data.id
 })
 
-After({tags: "@Create or @ReadById or @Update"}, async function () {
+After({tags: "@Create or @ReadById or @Update or @UsersCreate-N or @UsersReadById-N or @UsersUpdate-N or @UsersDelete-N"}, async function () {
     let _postId = this.id
-    await HttpRequestManager.makeRequest('DELETE', endpoints.usersById.replace('{id}', _postId), payloads.Valid.DELETE.DeleteUser)
-    .then(function (response) {
-        expect(response.status).to.equal(200)
-        expect(response.statusText).to.equal('OK')
-        console.log(`User ${_postId} deleted`)
-    })
-    .catch(function (error) {
-        console.log(error)
-        throw error
-    })
+    if(_postId != undefined) {
+        console.log(endpoints.usersById.replace('{id}', _postId))
+        await HttpRequestManager.makeRequest('DELETE', endpoints.usersById.replace('{id}', _postId), payloads.Valid.DELETE.DeleteUser)
+        .then(function (response) {
+            expect(response.status).to.equal(200)
+            expect(response.statusText).to.equal('OK')
+            console.log(`User ${_postId} deleted`)
+        })
+        .catch(function (error) {
+            //console.log(error)
+            throw error
+        })
+    }    
 })
