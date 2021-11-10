@@ -1,10 +1,10 @@
 import { After, Before } from "@cucumber/cucumber";
 import HttpRequestManager from "../../../src/common/api/http.request.manager";
 import endpoints from '../../../src/resources/endpoints.json'
-import payloads from '../../../src/resources/payloads/payloads.categories.json'
+import payloads from '../../../src/resources/payloads/payloads.categories.js'
 import { expect } from 'chai';
 
-Before({tags: "@Retrieve or @Update or @Delete"}, async function () {
+Before({tags: "@Category-Retrieve or @Category-Update or @Category-Delete"}, async function () {
     let _response = ''
     await HttpRequestManager.makeRequest('POST', endpoints.categories, payloads.Valid.POST.CreateCategory)
     .then(function (response) {
@@ -19,7 +19,7 @@ Before({tags: "@Retrieve or @Update or @Delete"}, async function () {
     this.id = _response.data.id
 })
 
-After({tags: "@Create or @Retrieve or @Update"}, async function () {
+After({tags: "@Category-Create or @Category-Retrieve or @Category-Update"}, async function () {
     let _postId = this.id
     await HttpRequestManager.makeRequest('DELETE', endpoints.categoriesById.replace('{id}', _postId), payloads.Valid.DELETE.DeleteCategory)
     .then(function (response) {

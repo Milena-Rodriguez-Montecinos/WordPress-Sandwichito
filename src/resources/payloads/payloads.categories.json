@@ -5,7 +5,7 @@
                 "name": "Mai"
             },
             "UpdateCategory": {
-                "name": "Suki"
+                "id": "1"
             }
         }, 
         "DELETE": {
@@ -13,18 +13,20 @@
                 "id": "8",
                 "force": true    
             }
+        },
+        "GET":{
+            "RetrieveACategory":{
+                "id":"1"
+            }
         }
     },
     "Invalid": {
         "CreateCategory": {
             "id": "1"
         },
-        "UpdateCategory": {
-            "id": "2"
-        },
         "DELETE": {
             "DeleteCategory": {
-                "id": "8"  
+                "id": "1"  
             }
         }
     }  
