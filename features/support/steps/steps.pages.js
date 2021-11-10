@@ -1,4 +1,4 @@
-/*import { Given, When, Then } from "@cucumber/cucumber";
+import { Given, When, Then } from "@cucumber/cucumber";
 import { expect } from "chai";
 import HttpRequestManager from "../../../src/common/api/http.request.manager";
 import pagePayloads from "../../../src/resources/payloads/payloads.page.json";
@@ -9,33 +9,35 @@ let _response = "";
 let data = "";
 
 Given(/^I have valid credentials$/, function () {
-    validCredentials = true;
+    validCredentials = "AdminCredentials";
 });
 
 Given(/^I have the required payload$/, function (table) {
     data = JsonAccess.getObjectJSON(pagePayloads, table.rowsHash().payload);
 });
 
+Given(/^I don't have valid credentials$/, function () {
+    validCredentials = "InvalidCredentials";
+});
+
 When(
-    /^I execute a (.*) request to (.*) endpoint$/,
+    /^I execute a (.*) request to (.*) page endpoint$/,
     async function (verb, endpoint) {
         let _endpoint = "";
-        switch (verb) {
-            case "POST":
-                _endpoint = endpoint.replace("{id}", this.pageId);
-                data = pagePayloads.Valid.PUT;
-                break;
-            case "DELETE":
-                _endpoint = endpoint.replace("{id}", this.pageId);
-                break;
-            default:
-                _endpoint = endpoint;
-                break;
+        if (endpoint.includes("{id}")) {
+            _endpoint = endpoint.replace("{id}", this.pageId);
+            data = pagePayloads.Valid.PUT;
+        } else {
+            _endpoint = endpoint;
         }
-        await HttpRequestManager.makeRequest(verb, _endpoint, data)
-            .then(function (response) {
-                _response = response;
-            })
+        await HttpRequestManager.makeRequest(
+            verb,
+            _endpoint,
+            data,
+            validCredentials
+        ).then(function (response) {
+            _response = response;
+        });
         this.afterPageId = _response.data.id;
         data = "";
     }
@@ -49,8 +51,7 @@ Then(
     }
 );
 
-Then(/^The page is created|updated|deleted$/, function () {
+Then(/^the page is created|updated|deleted$/, function () {
     expect(_response.data.id).not.to.be.undefined;
     this.pageId = _response.data.id;
 });
-*/
