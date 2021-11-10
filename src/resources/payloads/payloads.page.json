@@ -1,0 +1,23 @@
+{
+    "Valid": {
+        "POST": {
+            "title": "title-example-with-Postman111111111111111111111111111",
+            "content": "content",
+            "categories": "news",
+            "status": "publish"
+        },
+        "PUT": {
+            "title": "title-example-with-PUT"
+        },
+        "DELETE": {
+            "DeleteUser": {
+                "force": true,
+                "reassign": 1
+            }
+        }
+    },
+    "Invalid": {
+        "POST": {},
+        "DELETE": {}
+    }
+}
