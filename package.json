@@ -27,6 +27,9 @@
     "@babel/register": "^7.16.0",
     "@cucumber/cucumber": "^7.3.1",
     "@cucumber/pretty-formatter": "^1.0.0-alpha.1",
+    "flat": "^5.0.2",
+    "flatten-unflatten": "^1.0.0",
+    "obj-unflatten": "^1.0.10",
     "unflatten": "^1.0.4"
   }
 }

@@ -2,13 +2,15 @@ import { Given, When, Then } from '@cucumber/cucumber';
 import { expect } from 'chai';
 import HttpRequestManager from '../../../src/common/api/http.request.manager'
 import payloads from '../../../src/resources/payloads/payloads.post.json'
+import {flatten, unflatten} from 'flatten-unflatten'
+import JsonAccess from './json.access'
 
 let validCredentials = false;
 let _response = '';
 let data = '';
 
 Given(/^A invalid credentials$/, function (dataTable) {
-    data = payloads.Valid[dataTable.rowsHash().payload]
+    data = JsonAccess.getObjectJSON(payloads, dataTable.rowsHash().payload)
     validCredentials = false
 })
 
@@ -29,6 +31,7 @@ Then(/^The status response code should be (\d+) with status text (.*)$/, functio
 })
 
 Given(/^A Valid credentials.$/, function (dataTable) {
+    data = JsonAccess.getObjectJSON(payloads, dataTable.rowsHash().payload)    
     validCredentials = true
 })
 
