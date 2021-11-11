@@ -7,7 +7,7 @@ import payloads from '../../../src/resources/payloads/payloads.post.json'
 let endpoint = endpoints.postById
 let _response = ''
 
-Before({tags: "@Posts-update or @Posts-delete or @Posts-read"}, async function() {
+Before({tags: "@Posts-update or @Posts-delete or @Posts-read or @Posts-readById"}, async function() {
     let _response = ''
     await HttpRequestManager.makeRequest('POST', endpoints.posts, payloads.Valid.POST, "AdminCredentials", "http://192.168.33.80:8080")
     .then(function (response) {
@@ -23,7 +23,7 @@ Before({tags: "@Posts-update or @Posts-delete or @Posts-read"}, async function()
     this.id = _response.data.id
 })
 
-After({tags: "@Posts-update or @Posts-read"}, async function() {
+After({tags: "@Posts-update or @Posts-read or @Posts-readById"}, async function() {
     let _postId = this.id
     let _endpoint = endpoint.replace('{id}', _postId)
     await HttpRequestManager.makeRequest('DELETE', _endpoint, '', "AdminCredentials", "http://192.168.33.80:8080")

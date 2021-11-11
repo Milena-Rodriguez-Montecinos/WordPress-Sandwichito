@@ -14,6 +14,12 @@ Scenario: The endpoint should be able to retrieve the collection of all posts
     When Executes a GET request to wp/v2/posts endpoint
     Then The status code should be 200 OK
 
+@Posts-Crud @Posts-readById
+Scenario: The endpoint should be able to retrieve the collection of all posts by id post
+    Given A valid credentials
+    When Executes a GET request to wp/v2/posts/{id} endpoint
+    Then The status code should be 200 OK
+
 @Posts-Crud @Posts-update
 Scenario: UPDATE WITH ALL REQUIRED FIELDS IS SUCCEFUL
 
