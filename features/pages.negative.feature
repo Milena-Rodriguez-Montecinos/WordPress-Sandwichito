@@ -21,7 +21,7 @@ Feature: Pages
     Scenario: Verify that a non authorized user cannot update a page
         Given Does not using valid credentials
         When Executing DELETE request to wp/v2/pages/{id} page endpoint
-        Then the page is deleted
+        Then The page has been deleted
         And the status code should be 401 Unauthorized
 
     @NEGATIVE @UNAUTHORIZED-GET

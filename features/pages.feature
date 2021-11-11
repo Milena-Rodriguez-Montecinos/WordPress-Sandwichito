@@ -27,12 +27,12 @@ Feature: Pages
         And Given the required payload
             | payload | Valid.PUT |
         When Executing POST request to wp/v2/pages/{id} page endpoint
-        Then the page is updated
+        Then The page has been updated
         And the status code should be 200 OK
 
     @PAGE-CRUD @PAGE-DELETE
     Scenario: A user should be able to delete a page
         Given Given valid credentials
         When Executing DELETE request to wp/v2/pages/{id} page endpoint
-        Then the page is deleted
+        Then The page has been deleted
         And the status code should be 200 OK

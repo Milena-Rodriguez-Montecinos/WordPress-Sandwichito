@@ -63,7 +63,7 @@ Then(
     }
 );
 
-Then(/^the page is created|updated|deleted$/, function () {
+Then(/^The page has been (.*)$/, function (action) {
     if (_response.data.id != null) {
         this.afterPageId = _response.data.id;
         expect(_response.data.id).not.to.be.undefined;
