@@ -4,7 +4,7 @@ import endpoints from '../../../src/resources/endpoints.json'
 import payloads from '../../../src/resources/payloads/payloads.categories.js'
 import { expect } from 'chai';
 
-Before({tags: "@Category-Retrieve or @Category-Update or @Category-Delete"}, async function () {
+Before({tags: "@Category-Retrieve or @Category-Update or @Category-Delete or @Negative-Category-Retrieve or @Negative-Category-Create or @Negative-Category-Delete"}, async function () {
     let _response = ''
     await HttpRequestManager.makeRequest('POST', endpoints.categories, payloads.Valid.POST.CreateCategory)
     .then(function (response) {
@@ -19,15 +19,15 @@ Before({tags: "@Category-Retrieve or @Category-Update or @Category-Delete"}, asy
     this.id = _response.data.id
 })
 
-After({tags: "@Category-Create or @Category-Retrieve or @Category-Update"}, async function () {
+After({tags: "@Category-Create or @Category-Retrieve or @Category-Update or Negative-Category-POST or @Negative-Category-Retrieve"}, async function () {
     let _postId = this.id
     if(_postId != undefined) {
-        console.log(endpoints.usersById.replace('{id}', _postId))
-        await HttpRequestManager.makeRequest('DELETE', endpoints.usersById.replace('{id}', _postId), payloads.Valid.DELETE.DeleteCategory)
+        console.log(endpoints.categoriesById.replace('{id}', _postId))
+        await HttpRequestManager.makeRequest('DELETE', endpoints.categoriesById.replace('{id}', _postId), payloads.Valid.DELETE.DeleteCategory)
         .then(function (response) {
             expect(response.status).to.equal(200)
             expect(response.statusText).to.equal('OK')
-            console.log(`User ${_postId} deleted`)
+            console.log(`Category ${_postId} deleted`)
         })
         .catch(function (error) {
             throw error

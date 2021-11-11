@@ -2,7 +2,7 @@
     "Valid": {
         "POST": {
             "CreateCategory": {
-                "name": "Mai"
+                "name": "name"
             },
             "UpdateCategory": {
                 "id": "7"
@@ -16,19 +16,28 @@
         },
         "GET":{
             "RetrieveACategory":{
-                "id":"9"
+                "id":"12"
             }
         }
     },
     "Invalid": {
-        "CreateCategory": {
-            "id": "1"
-        },
+        "POST": {
+            "CreateCategory": {
+                "id": "7"
+            },
+            "UpdateCategory": {
+                "name": "fatalname"            }
+        }, 
         "DELETE": {
             "DeleteCategory": {
-                "id": "15"  
+                "id": "8"   
+            }
+        },
+        "GET":{
+            "RetrieveACategory":{
+                "name":"fatalname"
             }
         }
-    }  
+    }
 }
 
