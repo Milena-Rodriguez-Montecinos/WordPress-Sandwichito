@@ -30,7 +30,6 @@ After({tags: "@Create or @ReadById or @Update or @UsersCreate-N or @UsersReadByI
             console.log(`User ${_postId} deleted`)
         })
         .catch(function (error) {
-            //console.log(error)
             throw error
         })
     }    

@@ -21,14 +21,16 @@ Before({tags: "@Category-Retrieve or @Category-Update or @Category-Delete"}, asy
 
 After({tags: "@Category-Create or @Category-Retrieve or @Category-Update"}, async function () {
     let _postId = this.id
-    await HttpRequestManager.makeRequest('DELETE', endpoints.categoriesById.replace('{id}', _postId), payloads.Valid.DELETE.DeleteCategory)
-    .then(function (response) {
-        expect(response.status).to.equal(200)
-        expect(response.statusText).to.equal('OK')
-        console.log(`Category ${_postId} deleted`)
-    })
-    .catch(function (error) {
-        console.log(error)
-        throw error
-    })
+    if(_postId != undefined) {
+        console.log(endpoints.usersById.replace('{id}', _postId))
+        await HttpRequestManager.makeRequest('DELETE', endpoints.usersById.replace('{id}', _postId), payloads.Valid.DELETE.DeleteCategory)
+        .then(function (response) {
+            expect(response.status).to.equal(200)
+            expect(response.statusText).to.equal('OK')
+            console.log(`User ${_postId} deleted`)
+        })
+        .catch(function (error) {
+            throw error
+        })
+    }   
 })
