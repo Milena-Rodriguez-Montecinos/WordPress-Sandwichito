@@ -5,14 +5,36 @@ import pagePayloads from "../../../src/resources/payloads/payloads.page.json";
 import { expect } from "chai";
 
 Before(
-    { tags: "@PAGE-SPECIFICGET or @PAGE-PUT or @PAGE-DELETE" },
+    {
+        tags: "@PAGE-SPECIFICGET or @PAGE-PUT or @PAGE-DELETE or @UNAUTHORIZED-PUT or @UNAUTHORIZED-DELETE or @UNAUTHORIZED-SPECIFICGET or @INVALID-TITLEVALUE  or @INVALID-BODYVALUE",
+    },
     async function () {
         let _response = "";
 
         await HttpRequestManager.makeRequest(
             "POST",
             endpoints.pages,
-            pagePayloads.Valid.POST
+            pagePayloads.Invalid.POST
+        ).then(function (response) {
+            expect(response.status).to.be.equal(201);
+            expect(response.statusText).to.be.equal("Created");
+            _response = response;
+        });
+
+        this.pageId = _response.data.id;
+        console.log(`project ${this.pageId} created`);
+    }
+);
+Before(
+    {
+        tags: "@INVALID-SPECIFICGET"
+    },
+    async function () {
+        let _response = "";
+        await HttpRequestManager.makeRequest(
+            "POST",
+            endpoints.pages,
+            pagePayloads.Invalid.PASSWORD
         ).then(function (response) {
             expect(response.status).to.be.equal(201);
             expect(response.statusText).to.be.equal("Created");
@@ -24,15 +46,16 @@ Before(
     }
 );
 After(
-    { tags: "@PAGE-SPECIFICGET or @PAGE-PUT or @PAGE-POST" },
+    {
+        tags: "@PAGE-SPECIFICGET or @PAGE-PUT or @PAGE-POST or @UNAUTHORIZED-PUT or @INVALID-SPECIFICGET or @INVALID-TITLEVALUE or @INVALID-BODYVALUE or @UNAUTHORIZED-SPECIFICGET or @UNAUTHORIZED-DELETE",
+    },
     async function () {
         await HttpRequestManager.makeRequest(
             "DELETE",
             endpoints.pagesById.replace("{id}", this.afterPageId)
-        )
-            .then(function (response) {
-                expect(response.status).to.equal(200);
-                expect(response.statusText).to.equal("OK");
-            })
+        ).then(function (response) {
+            expect(response.status).to.equal(200);
+            expect(response.statusText).to.equal("OK");
+        });
     }
 );

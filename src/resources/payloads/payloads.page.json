@@ -17,7 +17,20 @@
         }
     },
     "Invalid": {
-        "POST": {},
-        "DELETE": {}
+        "POSTINT": {
+            "title": 1234
+        },
+        "EMPTY": {},
+        "PASSWORD": {
+            "title": "title-example-with-cucumber",
+            "content": "content",
+            "categories": "news",
+            "status": "publish",
+            "password": "123486"
+        },
+        "BADPASSWORD": {
+            "id":"",
+            "password": ""
+        }
     }
 }

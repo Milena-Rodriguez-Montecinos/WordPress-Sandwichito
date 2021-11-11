@@ -7,26 +7,27 @@ import JsonAccess from "./json.access";
 let validCredentials = false;
 let _response = "";
 let data = "";
+let _endpoint = "";
+let _pageId;
 
-Given(/^I have valid credentials$/, function () {
+Given(/^Given valid credentials$/, function () {
     validCredentials = "AdminCredentials";
 });
 
-Given(/^I have the required payload$/, function (table) {
+Given(/^Given the required payload$/, function (table) {
     data = JsonAccess.getObjectJSON(pagePayloads, table.rowsHash().payload);
 });
 
-Given(/^I don't have valid credentials$/, function () {
+Given(/^Does not using valid credentials$/, function () {
     validCredentials = "InvalidCredentials";
 });
 
 When(
-    /^I execute a (.*) request to (.*) page endpoint$/,
+    /^Executing (.*) request to (.*) page endpoint$/,
     async function (verb, endpoint) {
-        let _endpoint = "";
+        _pageId = this.pageId;
         if (endpoint.includes("{id}")) {
             _endpoint = endpoint.replace("{id}", this.pageId);
-            data = pagePayloads.Valid.PUT;
         } else {
             _endpoint = endpoint;
         }
@@ -35,10 +36,19 @@ When(
             _endpoint,
             data,
             validCredentials
-        ).then(function (response) {
-            _response = response;
-        });
-        this.afterPageId = _response.data.id;
+        )
+            .then(function (response) {
+                _response = response;
+            })
+            .catch(function (error) {
+                _response = error.response;
+            });
+        if (_response.data.id != null) {
+            this.afterPageId = _response.data.id;
+        } else {
+            _pageId = this.pageId;
+            this.afterPageId = _pageId;
+        }
         data = "";
     }
 );
@@ -46,12 +56,19 @@ When(
 Then(
     /^the status code should be (\d+) (.*)$/,
     function (statusCode, statusText) {
+        console.log(statusCode);
+        console.log(statusText);
         expect(_response.status).to.equal(statusCode);
         expect(_response.statusText).to.equal(statusText);
     }
 );
 
 Then(/^the page is created|updated|deleted$/, function () {
-    expect(_response.data.id).not.to.be.undefined;
-    this.pageId = _response.data.id;
+    if (_response.data.id != null) {
+        this.afterPageId = _response.data.id;
+        expect(_response.data.id).not.to.be.undefined;
+    } else {
+        this.afterPageId = _pageId;
+        expect(_response.data).not.to.be.undefined;
+    }
 });
