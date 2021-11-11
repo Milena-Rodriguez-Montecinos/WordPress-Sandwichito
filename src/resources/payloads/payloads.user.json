@@ -21,10 +21,75 @@
     },
     "Invalid": {
         "POST": {
-            
+            "Create-Without-Name": {
+                "email": "jose_canseco_canales@email.com",
+                "password": "canseco2468013579Jose"
+            },
+            "Create-Without-Email": {
+                "username": "Jose Canseco Canales",
+                "password": "canseco2468013579Jose"
+            },
+            "Create-Without-Pass": {
+                "username": "Jose Canseco Canales",
+                "email": "jose_canseco_canales@email.com"
+            },
+            "Create-Empty-Name": {
+                "username": "",
+                "email": "jose_canseco_canales@email.com",
+                "password": "canseco2468013579Jose"
+            },
+            "Create-Empty-Email": {
+                "username": "Jose Canseco Canales",
+                "email": "",
+                "password": "canseco2468013579Jose"
+            },
+            "Create-Empty-Pass": {
+                "username": "Jose Canseco Canales",
+                "email": "jose_canseco_canales@email.com",
+                "password": ""
+            },
+            "Create-Space-Name": {
+                "username": " ",
+                "email": "jose_canseco_canales@email.com",
+                "password": "canseco2468013579Jose"
+            },
+            "Create-Space-Email": {
+                "username": "Jose Canseco Canales",
+                "email": " ",
+                "password": "canseco2468013579Jose"
+            },
+            "Create-Space-Pass": {
+                "username": "Jose Canseco Canales",
+                "email": "jose_canseco_canales@email.com",
+                "password": " "
+            }, 
+            "Update-Invalid-Email": {
+                "email": "123456abcdef&%$/("
+            },
+            "Update-Empty-Email": {
+                "email": "123456abcdef"
+            },
+            "Update-Space-Email": {
+                "email": "123456abcdef"
+            },
+            "Update-Empty-Password": {
+                "password": ""
+            },
+            "Update-Space-Password": {
+                "password": " "
+            },
+            "Update-username": {
+                "username": "Jose Maria Canales"
+            }
         }, 
         "DELETE": {
-
+            "Delete-Without-Parameters": { },
+            "Delete-Without-Force": {
+                "reassign": 1
+            },
+            "Delete-Without-reassing": {
+                "force": true
+            }
         }
     }
 }
