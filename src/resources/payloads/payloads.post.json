@@ -19,7 +19,9 @@
     },
     "Invalid": {
         "POST": {
-            
+            "title": "",
+            "Content": "",
+            "excerpt": ""            
         }, 
         "DELETE": {
 
