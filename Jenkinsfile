@@ -34,8 +34,14 @@ pipeline {
         }
         
       }
+ 
      
     }
+          post {
+            always {
+              publishHTML(allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'reports/', reportFiles: 'report.html', reportName: 'Cucumber report')
+            }
+       }
 
     stage('Reports') {
         steps {
