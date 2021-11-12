@@ -13,41 +13,28 @@ pipeline {
     stage('Tests with Cucumber') {
       parallel {
         stage('User feature') {
-          post {
-            success {
-              publishHTML(allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'reports/', reportFiles: 'report.html', reportName: 'User feature')
-            }
-
-          }
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
               nodejs('Node16.4') {
                 sh 'npm run test -- --tags "@Users"'
               }
-
             }
-
-          }
+          }      
         }
 
         stage('Pages feature') {
-          post {
-            success {
-              publishHTML(allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'reports/', reportFiles: 'report.html', reportName: 'Pages feature report')
-            }
-
-          }
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
               nodejs('Node16.4') {
                 sh 'npm run test -- --tags "@Pages"'
               }
-
             }
-
           }
+
         }
+        
       }
+     
     }
 
     stage('Reports') {
@@ -56,10 +43,6 @@ pipeline {
                 reportTitle: 'My report',
                 fileIncludePattern: 'reports/report.json',
                 )
-        publishHTML(target:
-          [allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true,
-          reportDir: 'doc/internal/html', reportFiles: 'index.html', reportName:
-          'DOC', reportTitles: ''])
         echo "CUCUMBER tests report: ${BUILD_URL}cucumber-html-reports/overview-features.html"
         }
     }        
