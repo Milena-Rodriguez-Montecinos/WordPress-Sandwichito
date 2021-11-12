@@ -29,15 +29,6 @@ pipeline {
           }
           post{
             success {
-              // publish html
-              publishHTML target: [
-                  allowMissing: false,
-                  alwaysLinkToLastBuild: false,
-                  keepAll: true,
-                  reportDir: 'reports/',
-                  reportFiles: 'report.html',
-                  reportName: 'User feature'
-                ]
               //send emails
               /*emailext (to: 'titocaceres.carlos@gmail.com', 
                 subject: "Email Report from - '${env.JOB_NAME}' about the 'User feature'", 
@@ -57,15 +48,6 @@ pipeline {
           } 
           post{
             success {
-              // publish html
-              publishHTML target: [
-                  allowMissing: false,
-                  alwaysLinkToLastBuild: false,
-                  keepAll: true,
-                  reportDir: 'reports/',
-                  reportFiles: 'report.html',
-                  reportName: 'Pages feature report'
-                ]
               /*emailext (to: 'titocaceres.carlos@gmail.com', 
                 subject: "Email Report from - '${env.JOB_NAME}' about the 'Pages feature'", 
                 body: readFile("MLendPoint/coverage/lcov-report/index.html"), 
@@ -74,6 +56,20 @@ pipeline {
           }                  
         }     
       }     
+      post{
+        success {
+              // publish html
+              publishHTML target: [
+                  allowMissing: false,
+                  alwaysLinkToLastBuild: false,
+                  keepAll: true,
+                  reportDir: 'reports/',
+                  reportFiles: 'report.html',
+                  reportName: 'User feature'
+                ]      
+            }
+        
+      }
     }    
 
     stage('Package-the project') {
