@@ -1,5 +1,5 @@
 @Users
-Feature: Users
+Feature: Users CRUD
 
 @Users-CRUD @Read
 Scenario: A user should be able to retrieve the collection of all users

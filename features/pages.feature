@@ -1,5 +1,5 @@
 @Pages
-Feature: Pages
+Feature: Pages CRUD
 
     @PAGE-CRUD @PAGE-GET
     Scenario: A user should be able to retrieve the collection of all pages

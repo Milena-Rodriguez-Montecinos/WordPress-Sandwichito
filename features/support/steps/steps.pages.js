@@ -3,6 +3,7 @@ import { expect } from "chai";
 import HttpRequestManager from "../../../src/common/api/http.request.manager";
 import pagePayloads from "../../../src/resources/payloads/payloads.page.json";
 import JsonAccess from "./json.access";
+import logger from "../../../src/logger/logger.pages";
 
 let validCredentials = false;
 let _response = "";
@@ -25,6 +26,7 @@ Given(/^Does not using valid credentials$/, function () {
 When(
     /^Executing (.*) request to (.*) page endpoint$/,
     async function (verb, endpoint) {
+        logger.info("Startint the WHEN step")
         _pageId = this.pageId;
         if (endpoint.includes("{id}")) {
             _endpoint = endpoint.replace("{id}", this.pageId);
@@ -41,6 +43,7 @@ When(
                 _response = response;
             })
             .catch(function (error) {
+                logger.error(error);
                 _response = error.response;
             });
         if (_response.data.id != null) {

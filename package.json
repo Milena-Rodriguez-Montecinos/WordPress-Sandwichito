@@ -30,6 +30,7 @@
     "flat": "^5.0.2",
     "flatten-unflatten": "^1.0.0",
     "obj-unflatten": "^1.0.10",
-    "unflatten": "^1.0.4"
+    "unflatten": "^1.0.4",
+    "winston": "^3.3.3"
   }
 }
