@@ -23,36 +23,6 @@ pipeline {
             }
           }              
         }
-
-        /*stage('User feature') {
-          steps {
-            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              nodejs('Node16.4') {
-                sh 'npm run test -- --tags "@Users"'
-              }
-            }
-          }              
-        }
-
-        stage('Pages feature') {
-          steps {
-            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              nodejs('Node16.4') {
-                sh 'npm run test -- --tags "@Pages"'
-              }
-            }
-          }         
-        }
-
-        stage('Categories feature') {
-          steps {
-            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              nodejs('Node16.4') {
-                sh 'npm run test -- --tags "@Categories"'
-              }
-            }
-          }          
-        }*/
       }
     }
 
@@ -74,6 +44,7 @@ pipeline {
     DOCKER_HUB = credentials('Docker')
     TAG_VERSION = '1.0'
   }
+
   post {
 
     success {
