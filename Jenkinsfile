@@ -60,7 +60,7 @@ pipeline {
     always {
         cucumber (
                 reportTitle: 'My report',
-                fileIncludePattern: '**/*report.json',
+                fileIncludePattern: 'reports/report.json',
                 )
     }
     success {
