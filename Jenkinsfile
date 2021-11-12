@@ -36,20 +36,7 @@ pipeline {
                 //sh 'npm run test -- --tags "@Pages"'
               }  
           }       
-        }
-        post{
-        success {
-          // publish html
-          publishHTML target: [
-              allowMissing: false,
-              alwaysLinkToLastBuild: false,
-              keepAll: true,
-              reportDir: 'reports/',
-              reportFiles: 'report.html',
-              reportName: 'Pages feature report'
-            ]        
-        }
-      }       
+        }   
       }        
     }
    
