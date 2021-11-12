@@ -11,6 +11,11 @@ pipeline {
     }
 
     stage('Tests with Cucumber') {
+                post {
+            always {
+              publishHTML(allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'reports/', reportFiles: 'report.html', reportName: 'Cucumber report')
+            }
+       }
       parallel {
         stage('User feature') {
           steps {
@@ -37,11 +42,7 @@ pipeline {
  
      
     }
-          post {
-            always {
-              publishHTML(allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'reports/', reportFiles: 'report.html', reportName: 'Cucumber report')
-            }
-       }
+
 
     stage('Reports') {
         steps {
