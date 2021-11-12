@@ -78,18 +78,10 @@ pipeline {
 
     stage('Package-the project') {
 
-      steps {
+          steps {
               sh 'docker build -t at14-team2:"${TAG_VERSION}" .'
           }  
     }
-
-    /*stage('Publishing') {
-          steps {
-            sh 'docker login -u "${DOCKER_HUB_USR}" -p "${DOCKER_HUB_PSW}"'
-            sh 'docker tag extractor_service:"${TAG_VERSION}" "${DOCKER_HUB_USER}"/extractor_service:"${TAG_VERSION}"'
-            sh 'docker push "${DOCKER_HUB_USER}"/extractor_service:"${TAG_VERSION}"'
-          }
-    }  */
   }
    post {
    success {
