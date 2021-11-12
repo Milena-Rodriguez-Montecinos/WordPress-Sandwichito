@@ -49,6 +49,9 @@ pipeline {
 
     stage('Reports') {
         steps {
+              nodejs('Node16.4') {
+                sh 'npm run test"'
+              }
          publishHTML(allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'reports/', reportFiles: 'report.html', reportName: 'Cucumber report1')
         cucumber (
                 reportTitle: 'My report',
