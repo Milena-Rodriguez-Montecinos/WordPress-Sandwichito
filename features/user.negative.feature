@@ -55,12 +55,11 @@ Scenario: A user should not be able to update a user info
     Then The error status code should be 401 Unauthorized 
 
 @UsersNegative @UsersUpdate-N
-Scenario: A user should not be able to create a new user
+Scenario: A user should not be able to update a user
     Given I have valid credentials 
         And I have a invalid payload: <payload>
     When I execute a POST request to wp/v2/users/{id} endpoint 
     Then The error status code should be <statusCode> <statusText>
-        #And The payload should be <errorPayload>
     Examples:
     |              payload              | statusCode |  statusText  |
     | Invalid.POST.Update-Invalid-Email |     400    | Bad Request  |
@@ -89,7 +88,3 @@ Scenario: A user should not be able to delete a user
     | Invalid.DELETE.Delete-Without-Parameters |     200    |       OK        |
     | Invalid.DELETE.Delete-Without-Force      |     200    |       OK        |
     | Invalid.DELETE.Delete-Without-reassing   |     200    |       OK        |
-    #|                  payload                 | statusCode |  statusText     |
-    #| Invalid.DELETE.Delete-Without-Parameters |     400    | Bad Request     |
-    #| Invalid.DELETE.Delete-Without-Force      |     501    | Not implemented |
-    #| Invalid.DELETE.Delete-Without-reassing   |     400    | Bad Request     |
