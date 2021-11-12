@@ -50,7 +50,7 @@ pipeline {
       }
     }
 
-    stage('Tests with Cucumber') {
+    stage('Reports') {
         steps {
         cucumber (
                 reportTitle: 'My report',
