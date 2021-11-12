@@ -36,8 +36,7 @@ pipeline {
                 //sh 'npm run test -- --tags "@Pages"'
               }  
           }       
-        }     
-      }    post{
+        }post{
         success {
           // publish html
           publishHTML target: [
@@ -49,7 +48,8 @@ pipeline {
               reportName: 'Pages feature report'
             ]        
         }
-      }      
+      }       
+      }        
     }
    
 
