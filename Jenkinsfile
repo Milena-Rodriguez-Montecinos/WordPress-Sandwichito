@@ -17,67 +17,67 @@ pipeline {
           }
     }
 
-  stage('Tests with Cucumber') {
+    stage('Tests with Cucumber') {
 
-      parallel {
-        stage('User feature') {
-          steps {
-              nodejs('Node16.4') {
-                sh 'npm run test -- --tags "@Users-CRUD"'
-                //sh 'npm run test -- --tags "@Users"'
-              }  
+        parallel {
+          stage('User feature') {
+            steps {
+                nodejs('Node16.4') {
+                  sh 'npm run test -- --tags "@Users-CRUD"'
+                  //sh 'npm run test -- --tags "@Users"'
+                }  
+            }
+          /*post{
+              success {
+                //send emails
+                emailext (to: 'titocaceres.carlos@gmail.com', 
+                  subject: "Email Report from - '${env.JOB_NAME}' about the 'User feature'", 
+                  body: readFile("EXTRACTOR_SERVICE/coverage/lcov-report/index.html"), 
+                  mimeType: 'text/html');               
+              }
+            }*/
+
           }
-         /*post{
-            success {
-              //send emails
-              emailext (to: 'titocaceres.carlos@gmail.com', 
-                subject: "Email Report from - '${env.JOB_NAME}' about the 'User feature'", 
-                body: readFile("EXTRACTOR_SERVICE/coverage/lcov-report/index.html"), 
-                mimeType: 'text/html');               
-            }
-          }*/
 
-        }
-
-        stage('Pages feature') {
-          steps {
-              nodejs('Node16.4') {
-                sh 'npm run test -- --tags "@PAGE-CRUD"'
-                //sh 'npm run test -- --tags "@Pages"'
-              }  
-          } 
-         /* post{
-            success {
-              emailext (to: 'titocaceres.carlos@gmail.com', 
-                subject: "Email Report from - '${env.JOB_NAME}' about the 'Pages feature'", 
-                body: readFile("MLendPoint/coverage/lcov-report/index.html"), 
-                mimeType: 'text/html');           
-            }
-          }   */               
+          stage('Pages feature') {
+            steps {
+                nodejs('Node16.4') {
+                  sh 'npm run test -- --tags "@PAGE-CRUD"'
+                  //sh 'npm run test -- --tags "@Pages"'
+                }  
+            } 
+          /* post{
+              success {
+                emailext (to: 'titocaceres.carlos@gmail.com', 
+                  subject: "Email Report from - '${env.JOB_NAME}' about the 'Pages feature'", 
+                  body: readFile("MLendPoint/coverage/lcov-report/index.html"), 
+                  mimeType: 'text/html');           
+              }
+            }   */               
+          }     
         }     
-      }     
-      post{
-        success {
-              // publish html
-              publishHTML target: [
-                  allowMissing: false,
-                  alwaysLinkToLastBuild: false,
-                  keepAll: true,
-                  reportDir: 'reports/',
-                  reportFiles: 'report.html',
-                  reportName: 'User feature'
-                ]      
-            }
-        
-      }
-    }    
+        post{
+          success {
+                // publish html
+                publishHTML target: [
+                    allowMissing: false,
+                    alwaysLinkToLastBuild: false,
+                    keepAll: true,
+                    reportDir: 'reports/',
+                    reportFiles: 'report.html',
+                    reportName: 'User feature'
+                  ]      
+              }
+          
+        }
+      }    
 
-    stage('Package-the project') {
+    /*stage('Package-the project') {
 
           steps {
               sh 'docker build -t at14Team-2:"${TAG_VERSION}" .'
           }  
-    }
+    }*/
 
     /*stage('Publishing') {
           steps {
