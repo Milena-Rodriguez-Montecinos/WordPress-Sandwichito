@@ -21,12 +21,7 @@ pipeline {
                 sh 'npm run test -- --tags "@Users"'
               }
             }
-          } 
-          post {
-            always {
-             
-            }
-           }               
+          }              
         }
 
         stage('Pages feature') {
