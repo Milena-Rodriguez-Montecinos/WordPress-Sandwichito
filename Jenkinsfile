@@ -96,8 +96,6 @@ pipeline {
     DOCKER_HUB_USER = 'titosvir'
     DOCKER_HUB = credentials('docker')
     TAG_VERSION = '1.0'
-    REPOSITORY_NAME = 'ct_services'
-    SONAR_TOKEN = credentials('sonar_tocken')
   }
 
 
