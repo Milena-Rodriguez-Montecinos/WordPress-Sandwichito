@@ -1,12 +1,5 @@
 pipeline {
   agent any
-    environment {
-    DOCKER_HUB_USER = 'titosvir'
-    DOCKER_HUB = credentials('docker')
-    TAG_VERSION = '1.0'
-    REPOSITORY_NAME = 'ct_services'
-    SONAR_TOKEN = credentials('sonar_tocken')
-  }
   stages {
     stage('Install dependencies') {
           steps {
@@ -79,7 +72,8 @@ pipeline {
     stage('Package-the project') {
 
           steps {
-              sh 'docker build -t at14-team2:"${TAG_VERSION}" .'
+
+              sh 'docker build -t extractor_service:"${TAG_VERSION}" .'
           }  
     }
   }
