@@ -12,7 +12,7 @@ pipeline {
 
     stage('Tests with Cucumber') {
 
-     /* parallel {
+      parallel {
 
         stage('Run all tests') {
           steps {
@@ -23,39 +23,8 @@ pipeline {
             }
           }              
         }
-
-        stage('User feature') {
-          steps {
-            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              nodejs('Node16.4') {
-                sh 'npm run test -- --tags "@Users"'
-              }
-            }
-          }              
-        }
-
-        stage('Pages feature') {
-          steps {
-            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              nodejs('Node16.4') {
-                sh 'npm run test -- --tags "@Pages"'
-              }
-            }
-          }         
-        }
-
-        stage('Categories feature') {
-          steps {
-            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              nodejs('Node16.4') {
-                sh 'npm run test -- --tags "@Categories"'
-              }
-            }
-          }          
-        }
-      }*/
+      }
     }
-
 
     stage('Reports') {
         steps {
@@ -63,7 +32,7 @@ pipeline {
         cucumber (
                 reportTitle: 'My report',
                 fileIncludePattern: 'reports/report.json',
-                )
+                
         echo "CUCUMBER tests report: ${BUILD_URL}cucumber-html-reports/overview-features.html"
         }
     }        
@@ -74,6 +43,7 @@ pipeline {
     DOCKER_HUB = credentials('Docker')
     TAG_VERSION = '1.0'
   }
+
   post {
 
     success {
