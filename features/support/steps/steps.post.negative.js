@@ -43,9 +43,7 @@ Then(
         expect(_response.status).to.equal(statusCode);
         expect(_response.statusText).to.equal(statusText);
     }
-).catch(function (error){
-    logger.error(error)
-});
+)
 
 Given(/^A Valid credential to retrieve$/, function () {
     validCredentials = true;

@@ -32,7 +32,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 95000000
+              "duration": 78000000
             }
           },
           {
@@ -45,7 +45,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 3000000
             }
           }
         ],
@@ -82,7 +82,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -106,7 +106,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 1000000
             }
           },
           {
@@ -119,7 +119,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 57000000
+              "duration": 56000000
             }
           },
           {
@@ -172,8 +172,8 @@
             "hidden": true,
             "result": {
               "status": "failed",
-              "duration": 63000000,
-              "error_message": "Error: Request failed with status code 400\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+              "duration": 58000000,
+              "error_message": "Error: Request failed with status code 400\n    at createError (D:\\usuario\\Desktop\\fundacion_jala\\Api-Testing\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\usuario\\Desktop\\fundacion_jala\\Api-Testing\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\usuario\\Desktop\\fundacion_jala\\Api-Testing\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (node:events:406:35)\n    at endReadableNT (node:internal/streams/readable:1329:12)\n    at processTicksAndRejections (node:internal/process/task_queues:83:21)"
             }
           },
           {
@@ -276,8 +276,8 @@
             "hidden": true,
             "result": {
               "status": "failed",
-              "duration": 64000000,
-              "error_message": "Error: Request failed with status code 400\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+              "duration": 56000000,
+              "error_message": "Error: Request failed with status code 400\n    at createError (D:\\usuario\\Desktop\\fundacion_jala\\Api-Testing\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\usuario\\Desktop\\fundacion_jala\\Api-Testing\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\usuario\\Desktop\\fundacion_jala\\Api-Testing\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (node:events:406:35)\n    at endReadableNT (node:internal/streams/readable:1329:12)\n    at processTicksAndRejections (node:internal/process/task_queues:83:21)"
             }
           },
           {
@@ -393,8 +393,8 @@
             "hidden": true,
             "result": {
               "status": "failed",
-              "duration": 88000000,
-              "error_message": "Error: Request failed with status code 400\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+              "duration": 52000000,
+              "error_message": "Error: Request failed with status code 400\n    at createError (D:\\usuario\\Desktop\\fundacion_jala\\Api-Testing\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\usuario\\Desktop\\fundacion_jala\\Api-Testing\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\usuario\\Desktop\\fundacion_jala\\Api-Testing\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (node:events:406:35)\n    at endReadableNT (node:internal/streams/readable:1329:12)\n    at processTicksAndRejections (node:internal/process/task_queues:83:21)"
             }
           },
           {
@@ -518,8 +518,8 @@
             "hidden": true,
             "result": {
               "status": "failed",
-              "duration": 103000000,
-              "error_message": "Error: Request failed with status code 400\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+              "duration": 44000000,
+              "error_message": "Error: Request failed with status code 400\n    at createError (D:\\usuario\\Desktop\\fundacion_jala\\Api-Testing\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\usuario\\Desktop\\fundacion_jala\\Api-Testing\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\usuario\\Desktop\\fundacion_jala\\Api-Testing\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (node:events:406:35)\n    at endReadableNT (node:internal/streams/readable:1329:12)\n    at processTicksAndRejections (node:internal/process/task_queues:83:21)"
             }
           },
           {
@@ -616,7 +616,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -642,7 +642,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 68000000
+              "duration": 35000000
             }
           },
           {
@@ -655,8 +655,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 4000000,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -401\n    +400\n\n    at World.<anonymous> (C:\\Cucumber\\WordPress-Sandwichito\\features\\support\\steps\\/steps.js:54:43)"
+              "duration": 3000000,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -401\n    +400\n\n    at World.<anonymous> (D:\\usuario\\Desktop\\fundacion_jala\\Api-Testing\\WordPress-Sandwichito\\features\\support\\steps\\/steps.js:54:43)"
             }
           }
         ],
@@ -706,7 +706,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -719,7 +719,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 60000000
+              "duration": 35000000
             }
           },
           {
@@ -764,8 +764,8 @@
             "hidden": true,
             "result": {
               "status": "failed",
-              "duration": 79000000,
-              "error_message": "Error: Request failed with status code 400\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+              "duration": 56000000,
+              "error_message": "Error: Request failed with status code 400\n    at createError (D:\\usuario\\Desktop\\fundacion_jala\\Api-Testing\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\usuario\\Desktop\\fundacion_jala\\Api-Testing\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\usuario\\Desktop\\fundacion_jala\\Api-Testing\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (node:events:406:35)\n    at endReadableNT (node:internal/streams/readable:1329:12)\n    at processTicksAndRejections (node:internal/process/task_queues:83:21)"
             }
           },
           {
@@ -849,8 +849,8 @@
             "hidden": true,
             "result": {
               "status": "failed",
-              "duration": 65000000,
-              "error_message": "Error: Request failed with status code 400\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+              "duration": 43000000,
+              "error_message": "Error: Request failed with status code 400\n    at createError (D:\\usuario\\Desktop\\fundacion_jala\\Api-Testing\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\usuario\\Desktop\\fundacion_jala\\Api-Testing\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\usuario\\Desktop\\fundacion_jala\\Api-Testing\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (node:events:406:35)\n    at endReadableNT (node:internal/streams/readable:1329:12)\n    at processTicksAndRejections (node:internal/process/task_queues:83:21)"
             }
           },
           {
@@ -910,7 +910,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ],
@@ -973,7 +973,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 57000000
+              "duration": 48000000
             }
           },
           {
@@ -1023,7 +1023,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -1049,7 +1049,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 64000000
+              "duration": 38000000
             }
           },
           {
@@ -1062,7 +1062,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ],
@@ -1094,8 +1094,8 @@
             "hidden": true,
             "result": {
               "status": "failed",
-              "duration": 94000000,
-              "error_message": "Error: Request failed with status code 400\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+              "duration": 57000000,
+              "error_message": "Error: Request failed with status code 400\n    at createError (D:\\usuario\\Desktop\\fundacion_jala\\Api-Testing\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\usuario\\Desktop\\fundacion_jala\\Api-Testing\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\usuario\\Desktop\\fundacion_jala\\Api-Testing\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (node:events:406:35)\n    at endReadableNT (node:internal/streams/readable:1329:12)\n    at processTicksAndRejections (node:internal/process/task_queues:83:21)"
             }
           },
           {
@@ -1211,7 +1211,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 5000000
             }
           },
           {
@@ -1224,7 +1224,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 99000000
+              "duration": 53000000
             }
           },
           {
@@ -1269,7 +1269,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 128000000
+              "duration": 67000000
             }
           },
           {
@@ -1295,7 +1295,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 117000000
+              "duration": 41000000
             }
           },
           {
@@ -1308,7 +1308,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -1316,7 +1316,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 310000000
+              "duration": 345000000
             }
           }
         ],
@@ -1390,7 +1390,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 96000000
+              "duration": 119000000
             }
           },
           {
@@ -1411,7 +1411,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 149000000
+              "duration": 127000000
             }
           }
         ],
@@ -1443,7 +1443,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 70000000
+              "duration": 72000000
             }
           },
           {
@@ -1456,7 +1456,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -1493,7 +1493,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 91000000
+              "duration": 76000000
             }
           },
           {
@@ -1527,7 +1527,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 192000000
+              "duration": 299000000
             }
           }
         ],
@@ -1559,7 +1559,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 73000000
+              "duration": 68000000
             }
           },
           {
@@ -1572,7 +1572,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -1585,7 +1585,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 210000000
+              "duration": 307000000
             }
           },
           {
@@ -1611,7 +1611,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ],
@@ -1701,7 +1701,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 49000000
+              "duration": 42000000
             }
           },
           {
@@ -1746,7 +1746,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 76000000
+              "duration": 62000000
             }
           },
           {
@@ -1783,7 +1783,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -1796,7 +1796,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 39000000
+              "duration": 40000000
             }
           },
           {
@@ -1817,7 +1817,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 207000000
+              "duration": 297000000
             }
           }
         ],
@@ -1849,7 +1849,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 75000000
+              "duration": 62000000
             }
           },
           {
@@ -1875,7 +1875,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 52000000
+              "duration": 40000000
             }
           },
           {
@@ -1901,7 +1901,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -1909,7 +1909,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 144000000
+              "duration": 346000000
             }
           }
         ],
@@ -1946,7 +1946,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -1959,7 +1959,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 48000000
+              "duration": 49000000
             }
           },
           {
@@ -1973,7 +1973,7 @@
             "result": {
               "status": "failed",
               "duration": 1000000,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -200\n    +401\n\n    at World.<anonymous> (C:\\Cucumber\\WordPress-Sandwichito\\features\\support\\steps\\/steps.pages.js:62:37)"
+              "error_message": "AssertionError\n    + expected - actual\n\n    -200\n    +401\n\n    at World.<anonymous> (D:\\usuario\\Desktop\\fundacion_jala\\Api-Testing\\WordPress-Sandwichito\\features\\support\\steps\\/steps.pages.js:62:37)"
             }
           }
         ],
@@ -2005,7 +2005,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 86000000
+              "duration": 60000000
             }
           },
           {
@@ -2031,7 +2031,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 39000000
+              "duration": 41000000
             }
           },
           {
@@ -2052,7 +2052,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 152000000
+              "duration": 287000000
             }
           }
         ],
@@ -2084,7 +2084,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 85000000
+              "duration": 57000000
             }
           },
           {
@@ -2134,7 +2134,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 90000000
+              "duration": 70000000
             }
           },
           {
@@ -2148,7 +2148,7 @@
             "result": {
               "status": "failed",
               "duration": 1000000,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -200\n    +400\n\n    at World.<anonymous> (C:\\Cucumber\\WordPress-Sandwichito\\features\\support\\steps\\/steps.pages.js:62:37)"
+              "error_message": "AssertionError\n    + expected - actual\n\n    -200\n    +400\n\n    at World.<anonymous> (D:\\usuario\\Desktop\\fundacion_jala\\Api-Testing\\WordPress-Sandwichito\\features\\support\\steps\\/steps.pages.js:62:37)"
             }
           },
           {
@@ -2156,7 +2156,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 126000000
+              "duration": 282000000
             }
           }
         ],
@@ -2188,7 +2188,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 82000000
+              "duration": 88000000
             }
           },
           {
@@ -2201,7 +2201,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -2225,7 +2225,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -2238,7 +2238,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 67000000
+              "duration": 71000000
             }
           },
           {
@@ -2252,7 +2252,7 @@
             "result": {
               "status": "failed",
               "duration": 1000000,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -201\n    +400\n\n    at World.<anonymous> (C:\\Cucumber\\WordPress-Sandwichito\\features\\support\\steps\\/steps.pages.js:62:37)"
+              "error_message": "AssertionError\n    + expected - actual\n\n    -201\n    +400\n\n    at World.<anonymous> (D:\\usuario\\Desktop\\fundacion_jala\\Api-Testing\\WordPress-Sandwichito\\features\\support\\steps\\/steps.pages.js:62:37)"
             }
           },
           {
@@ -2260,7 +2260,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 286000000
+              "duration": 281000000
             }
           }
         ],
@@ -2292,7 +2292,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 112000000
+              "duration": 61000000
             }
           },
           {
@@ -2305,7 +2305,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -2342,7 +2342,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 63000000
+              "duration": 53000000
             }
           },
           {
@@ -2356,7 +2356,7 @@
             "result": {
               "status": "failed",
               "duration": 1000000,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -200\n    +403\n\n    at World.<anonymous> (C:\\Cucumber\\WordPress-Sandwichito\\features\\support\\steps\\/steps.pages.js:62:37)"
+              "error_message": "AssertionError\n    + expected - actual\n\n    -200\n    +403\n\n    at World.<anonymous> (D:\\usuario\\Desktop\\fundacion_jala\\Api-Testing\\WordPress-Sandwichito\\features\\support\\steps\\/steps.pages.js:62:37)"
             }
           },
           {
@@ -2364,7 +2364,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 139000000
+              "duration": 134000000
             }
           }
         ],
@@ -2428,7 +2428,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -2441,7 +2441,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 122000000
+              "duration": 99000000
             }
           },
           {
@@ -2454,7 +2454,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ],
@@ -2482,7 +2482,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 115000000
+              "duration": 109000000
             }
           },
           {
@@ -2508,7 +2508,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 56000000
+              "duration": 64000000
             }
           },
           {
@@ -2529,7 +2529,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 238000000
+              "duration": 156000000
             }
           }
         ],
@@ -2557,7 +2557,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 108000000
+              "duration": 94000000
             }
           },
           {
@@ -2565,8 +2565,11 @@
             "keyword": "Given ",
             "line": 19,
             "name": "A Valid credential to retrieve",
+            "match": {
+              "location": "features\\support\\steps\\steps.post.negative.js:48"
+            },
             "result": {
-              "status": "undefined",
+              "status": "passed",
               "duration": 0
             }
           },
@@ -2579,8 +2582,8 @@
               "location": "features\\support\\steps\\steps.post.crud.js:42"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 50000000
             }
           },
           {
@@ -2592,7 +2595,7 @@
               "location": "features\\support\\steps\\steps.post.crud.js:54"
             },
             "result": {
-              "status": "skipped",
+              "status": "passed",
               "duration": 0
             }
           },
@@ -2601,7 +2604,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 443000000
+              "duration": 143000000
             }
           }
         ],
@@ -2629,7 +2632,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 108000000
+              "duration": 88000000
             }
           },
           {
@@ -2666,7 +2669,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 93000000
+              "duration": 91000000
             }
           },
           {
@@ -2687,7 +2690,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 335000000
+              "duration": 128000000
             }
           }
         ],
@@ -2715,7 +2718,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 123000000
+              "duration": 104000000
             }
           },
           {
@@ -2752,7 +2755,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 307000000
+              "duration": 193000000
             }
           },
           {
@@ -2765,7 +2768,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ],
@@ -2820,7 +2823,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -2833,7 +2836,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 63000000
+              "duration": 40000000
             }
           },
           {
@@ -2885,9 +2888,12 @@
             "keyword": "Given ",
             "line": 12,
             "name": "A Valid credentials.",
+            "match": {
+              "location": "features\\support\\steps\\steps.post.negative.js:52"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 5000000
             }
           },
           {
@@ -2899,8 +2905,8 @@
               "location": "features\\support\\steps\\steps.post.negative.js:18"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 41000000
             }
           },
           {
@@ -2912,7 +2918,7 @@
               "location": "features\\support\\steps\\steps.post.negative.js:40"
             },
             "result": {
-              "status": "skipped",
+              "status": "passed",
               "duration": 0
             }
           }
@@ -2952,9 +2958,12 @@
             "keyword": "Given ",
             "line": 19,
             "name": "A Valid credentials.",
+            "match": {
+              "location": "features\\support\\steps\\steps.post.negative.js:52"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 2000000
             }
           },
           {
@@ -2966,8 +2975,8 @@
               "location": "features\\support\\steps\\steps.post.negative.js:18"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 96000000
             }
           },
           {
@@ -2979,8 +2988,8 @@
               "location": "features\\support\\steps\\steps.post.negative.js:40"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1000000
             }
           }
         ],
@@ -3037,7 +3046,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 81000000
+              "duration": 51000000
             }
           },
           {
@@ -3111,7 +3120,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -3124,7 +3133,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 70000000
+              "duration": 222000000
             }
           },
           {
@@ -3136,9 +3145,8 @@
               "location": "features\\support\\steps\\steps.js:67"
             },
             "result": {
-              "status": "failed",
-              "duration": 1000000,
-              "error_message": "TypeError: Cannot read property 'id' of undefined\n    at World.<anonymous> (C:\\Cucumber\\WordPress-Sandwichito\\features\\support\\steps\\/steps.js:70:35)"
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -3150,7 +3158,7 @@
               "location": "features\\support\\steps\\steps.js:52"
             },
             "result": {
-              "status": "skipped",
+              "status": "passed",
               "duration": 0
             }
           },
@@ -3159,7 +3167,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 114000000
             }
           }
         ],
@@ -3190,9 +3198,8 @@
             "keyword": "Before",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 75000000,
-              "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+              "status": "passed",
+              "duration": 177000000
             }
           },
           {
@@ -3204,8 +3211,8 @@
               "location": "features\\support\\steps\\steps.js:13"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -3217,8 +3224,8 @@
               "location": "features\\support\\steps\\steps.js:30"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 77000000
             }
           },
           {
@@ -3230,8 +3237,8 @@
               "location": "features\\support\\steps\\steps.js:52"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -3239,7 +3246,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 179000000
             }
           }
         ],
@@ -3270,9 +3277,8 @@
             "keyword": "Before",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 81000000,
-              "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+              "status": "passed",
+              "duration": 181000000
             }
           },
           {
@@ -3284,8 +3290,8 @@
               "location": "features\\support\\steps\\steps.js:13"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -3308,7 +3314,7 @@
               "location": "features\\support\\steps\\steps.js:22"
             },
             "result": {
-              "status": "skipped",
+              "status": "passed",
               "duration": 0
             }
           },
@@ -3321,8 +3327,8 @@
               "location": "features\\support\\steps\\steps.js:30"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 103000000
             }
           },
           {
@@ -3334,8 +3340,8 @@
               "location": "features\\support\\steps\\steps.js:67"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -3347,7 +3353,7 @@
               "location": "features\\support\\steps\\steps.js:52"
             },
             "result": {
-              "status": "skipped",
+              "status": "passed",
               "duration": 0
             }
           },
@@ -3356,7 +3362,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 171000000
             }
           }
         ],
@@ -3387,9 +3393,8 @@
             "keyword": "Before",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 86000000,
-              "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+              "status": "passed",
+              "duration": 187000000
             }
           },
           {
@@ -3401,7 +3406,7 @@
               "location": "features\\support\\steps\\steps.js:13"
             },
             "result": {
-              "status": "skipped",
+              "status": "passed",
               "duration": 0
             }
           },
@@ -3425,8 +3430,8 @@
               "location": "features\\support\\steps\\steps.js:22"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -3438,8 +3443,8 @@
               "location": "features\\support\\steps\\steps.js:30"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 157000000
             }
           },
           {
@@ -3451,7 +3456,7 @@
               "location": "features\\support\\steps\\steps.js:67"
             },
             "result": {
-              "status": "skipped",
+              "status": "passed",
               "duration": 0
             }
           },
@@ -3464,7 +3469,7 @@
               "location": "features\\support\\steps\\steps.js:52"
             },
             "result": {
-              "status": "skipped",
+              "status": "passed",
               "duration": 0
             }
           }
@@ -3518,7 +3523,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -3531,7 +3536,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 120000000
+              "duration": 42000000
             }
           },
           {
@@ -3544,8 +3549,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 1000000,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -200\n    +401\n\n    at World.<anonymous> (C:\\Cucumber\\WordPress-Sandwichito\\features\\support\\steps\\/steps.js:58:37)"
+              "duration": 0,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -200\n    +401\n\n    at World.<anonymous> (D:\\usuario\\Desktop\\fundacion_jala\\Api-Testing\\WordPress-Sandwichito\\features\\support\\steps\\/steps.js:58:37)"
             }
           }
         ],
@@ -3582,7 +3587,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 3000000
             }
           },
           {
@@ -3619,7 +3624,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 68000000
+              "duration": 37000000
             }
           },
           {
@@ -3703,7 +3708,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 77000000
+              "duration": 45000000
             }
           },
           {
@@ -3716,7 +3721,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -3729,7 +3734,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 2000000
             }
           },
           {
@@ -3737,7 +3742,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ],
@@ -3774,7 +3779,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -3800,7 +3805,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 62000000
+              "duration": 45000000
             }
           },
           {
@@ -3813,7 +3818,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 2000000
             }
           },
           {
@@ -3871,7 +3876,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -3884,7 +3889,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -3897,7 +3902,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 54000000
+              "duration": 45000000
             }
           },
           {
@@ -3981,7 +3986,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -3994,7 +3999,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 39000000
+              "duration": 45000000
             }
           },
           {
@@ -4028,7 +4033,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ],
@@ -4078,7 +4083,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -4091,7 +4096,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 54000000
+              "duration": 49000000
             }
           },
           {
@@ -4125,7 +4130,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ],
@@ -4175,7 +4180,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -4188,7 +4193,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 50000000
+              "duration": 43000000
             }
           },
           {
@@ -4201,7 +4206,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 2000000
             }
           },
           {
@@ -4222,7 +4227,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ],
@@ -4272,7 +4277,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -4285,7 +4290,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 46000000
+              "duration": 43000000
             }
           },
           {
@@ -4311,7 +4316,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -4319,7 +4324,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ],
@@ -4369,7 +4374,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -4382,7 +4387,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 55000000
+              "duration": 44000000
             }
           },
           {
@@ -4479,7 +4484,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 64000000
+              "duration": 183000000
             }
           },
           {
@@ -4493,7 +4498,7 @@
             "result": {
               "status": "failed",
               "duration": 1000000,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -500\n    +400\n\n    at World.<anonymous> (C:\\Cucumber\\WordPress-Sandwichito\\features\\support\\steps\\/steps.js:54:43)"
+              "error_message": "AssertionError\n    + expected - actual\n\n    -201\n    +400\n\n    at World.<anonymous> (D:\\usuario\\Desktop\\fundacion_jala\\Api-Testing\\WordPress-Sandwichito\\features\\support\\steps\\/steps.js:58:37)"
             }
           },
           {
@@ -4514,7 +4519,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 194000000
             }
           }
         ],
@@ -4545,9 +4550,8 @@
             "keyword": "Before",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 53000000,
-              "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+              "status": "passed",
+              "duration": 184000000
             }
           },
           {
@@ -4559,7 +4563,7 @@
               "location": "features\\support\\steps\\steps.js:13"
             },
             "result": {
-              "status": "skipped",
+              "status": "passed",
               "duration": 0
             }
           },
@@ -4572,8 +4576,8 @@
               "location": "features\\support\\steps\\steps.js:30"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 39000000
             }
           },
           {
@@ -4585,8 +4589,8 @@
               "location": "features\\support\\steps\\steps.js:52"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 2000000
             }
           },
           {
@@ -4594,7 +4598,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 159000000
             }
           }
         ],
@@ -4644,7 +4648,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 58000000
+              "duration": 42000000
             }
           },
           {
@@ -4657,8 +4661,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 1000000,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -200\n    +401\n\n    at World.<anonymous> (C:\\Cucumber\\WordPress-Sandwichito\\features\\support\\steps\\/steps.js:58:37)"
+              "duration": 0,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -200\n    +401\n\n    at World.<anonymous> (D:\\usuario\\Desktop\\fundacion_jala\\Api-Testing\\WordPress-Sandwichito\\features\\support\\steps\\/steps.js:58:37)"
             }
           }
         ],
@@ -4689,9 +4693,8 @@
             "keyword": "Before",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 51000000,
-              "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+              "status": "passed",
+              "duration": 183000000
             }
           },
           {
@@ -4703,8 +4706,8 @@
               "location": "features\\support\\steps\\steps.js:13"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 3000000
             }
           },
           {
@@ -4727,7 +4730,7 @@
               "location": "features\\support\\steps\\steps.js:22"
             },
             "result": {
-              "status": "skipped",
+              "status": "passed",
               "duration": 0
             }
           },
@@ -4740,8 +4743,8 @@
               "location": "features\\support\\steps\\steps.js:30"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 38000000
             }
           },
           {
@@ -4753,8 +4756,8 @@
               "location": "features\\support\\steps\\steps.js:52"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -4762,7 +4765,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 185000000
             }
           }
         ],
@@ -4793,9 +4796,8 @@
             "keyword": "Before",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 68000000,
-              "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+              "status": "passed",
+              "duration": 181000000
             }
           },
           {
@@ -4807,8 +4809,8 @@
               "location": "features\\support\\steps\\steps.js:13"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -4820,7 +4822,7 @@
               "location": "features\\support\\steps\\steps.js:26"
             },
             "result": {
-              "status": "skipped",
+              "status": "passed",
               "duration": 0
             }
           },
@@ -4833,8 +4835,8 @@
               "location": "features\\support\\steps\\steps.js:30"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 45000000
             }
           },
           {
@@ -4846,7 +4848,7 @@
               "location": "features\\support\\steps\\steps.js:52"
             },
             "result": {
-              "status": "skipped",
+              "status": "passed",
               "duration": 0
             }
           },
@@ -4855,7 +4857,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 153000000
             }
           }
         ],
@@ -4886,9 +4888,8 @@
             "keyword": "Before",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 70000000,
-              "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+              "status": "passed",
+              "duration": 180000000
             }
           },
           {
@@ -4900,7 +4901,7 @@
               "location": "features\\support\\steps\\steps.js:13"
             },
             "result": {
-              "status": "skipped",
+              "status": "passed",
               "duration": 0
             }
           },
@@ -4913,7 +4914,7 @@
               "location": "features\\support\\steps\\steps.js:26"
             },
             "result": {
-              "status": "skipped",
+              "status": "passed",
               "duration": 0
             }
           },
@@ -4926,8 +4927,8 @@
               "location": "features\\support\\steps\\steps.js:30"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 42000000
             }
           },
           {
@@ -4939,7 +4940,7 @@
               "location": "features\\support\\steps\\steps.js:52"
             },
             "result": {
-              "status": "skipped",
+              "status": "passed",
               "duration": 0
             }
           },
@@ -4948,7 +4949,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 174000000
             }
           }
         ],
@@ -4979,9 +4980,8 @@
             "keyword": "Before",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 62000000,
-              "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+              "status": "passed",
+              "duration": 179000000
             }
           },
           {
@@ -4993,8 +4993,8 @@
               "location": "features\\support\\steps\\steps.js:13"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -5006,7 +5006,7 @@
               "location": "features\\support\\steps\\steps.js:26"
             },
             "result": {
-              "status": "skipped",
+              "status": "passed",
               "duration": 0
             }
           },
@@ -5019,8 +5019,8 @@
               "location": "features\\support\\steps\\steps.js:30"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 60000000
             }
           },
           {
@@ -5032,8 +5032,8 @@
               "location": "features\\support\\steps\\steps.js:52"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -5041,7 +5041,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 121000000
             }
           }
         ],
@@ -5072,9 +5072,8 @@
             "keyword": "Before",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 168000000,
-              "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+              "status": "passed",
+              "duration": 170000000
             }
           },
           {
@@ -5086,7 +5085,7 @@
               "location": "features\\support\\steps\\steps.js:13"
             },
             "result": {
-              "status": "skipped",
+              "status": "passed",
               "duration": 0
             }
           },
@@ -5099,7 +5098,7 @@
               "location": "features\\support\\steps\\steps.js:26"
             },
             "result": {
-              "status": "skipped",
+              "status": "passed",
               "duration": 0
             }
           },
@@ -5112,8 +5111,8 @@
               "location": "features\\support\\steps\\steps.js:30"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 51000000
             }
           },
           {
@@ -5125,8 +5124,8 @@
               "location": "features\\support\\steps\\steps.js:52"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -5134,7 +5133,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 162000000
             }
           }
         ],
@@ -5165,9 +5164,8 @@
             "keyword": "Before",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 76000000,
-              "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+              "status": "passed",
+              "duration": 174000000
             }
           },
           {
@@ -5179,7 +5177,7 @@
               "location": "features\\support\\steps\\steps.js:13"
             },
             "result": {
-              "status": "skipped",
+              "status": "passed",
               "duration": 0
             }
           },
@@ -5192,8 +5190,8 @@
               "location": "features\\support\\steps\\steps.js:26"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -5205,8 +5203,8 @@
               "location": "features\\support\\steps\\steps.js:30"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 77000000
             }
           },
           {
@@ -5218,8 +5216,9 @@
               "location": "features\\support\\steps\\steps.js:52"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "failed",
+              "duration": 1000000,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -200\n    +400\n\n    at World.<anonymous> (D:\\usuario\\Desktop\\fundacion_jala\\Api-Testing\\WordPress-Sandwichito\\features\\support\\steps\\/steps.js:58:37)"
             }
           },
           {
@@ -5227,7 +5226,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 122000000
             }
           }
         ],
@@ -5258,9 +5257,8 @@
             "keyword": "Before",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 69000000,
-              "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+              "status": "passed",
+              "duration": 176000000
             }
           },
           {
@@ -5272,7 +5270,7 @@
               "location": "features\\support\\steps\\steps.js:13"
             },
             "result": {
-              "status": "skipped",
+              "status": "passed",
               "duration": 0
             }
           },
@@ -5285,7 +5283,7 @@
               "location": "features\\support\\steps\\steps.js:26"
             },
             "result": {
-              "status": "skipped",
+              "status": "passed",
               "duration": 0
             }
           },
@@ -5298,8 +5296,8 @@
               "location": "features\\support\\steps\\steps.js:30"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 43000000
             }
           },
           {
@@ -5311,8 +5309,8 @@
               "location": "features\\support\\steps\\steps.js:52"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -5320,7 +5318,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 117000000
             }
           }
         ],
@@ -5351,9 +5349,8 @@
             "keyword": "Before",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 95000000,
-              "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+              "status": "passed",
+              "duration": 167000000
             }
           },
           {
@@ -5365,8 +5362,8 @@
               "location": "features\\support\\steps\\steps.js:13"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -5389,7 +5386,7 @@
               "location": "features\\support\\steps\\steps.js:22"
             },
             "result": {
-              "status": "skipped",
+              "status": "passed",
               "duration": 0
             }
           },
@@ -5402,8 +5399,8 @@
               "location": "features\\support\\steps\\steps.js:30"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 40000000
             }
           },
           {
@@ -5415,8 +5412,8 @@
               "location": "features\\support\\steps\\steps.js:52"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -5424,7 +5421,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 201000000
             }
           }
         ],
@@ -5455,9 +5452,8 @@
             "keyword": "Before",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 84000000,
-              "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+              "status": "passed",
+              "duration": 181000000
             }
           },
           {
@@ -5469,8 +5465,8 @@
               "location": "features\\support\\steps\\steps.js:13"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -5482,7 +5478,7 @@
               "location": "features\\support\\steps\\steps.js:26"
             },
             "result": {
-              "status": "skipped",
+              "status": "passed",
               "duration": 0
             }
           },
@@ -5495,8 +5491,8 @@
               "location": "features\\support\\steps\\steps.js:30"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 63000000
             }
           },
           {
@@ -5508,8 +5504,8 @@
               "location": "features\\support\\steps\\steps.js:52"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -5517,7 +5513,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 169000000
             }
           }
         ],
@@ -5548,9 +5544,8 @@
             "keyword": "Before",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 89000000,
-              "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+              "status": "passed",
+              "duration": 200000000
             }
           },
           {
@@ -5562,7 +5557,7 @@
               "location": "features\\support\\steps\\steps.js:13"
             },
             "result": {
-              "status": "skipped",
+              "status": "passed",
               "duration": 0
             }
           },
@@ -5575,8 +5570,8 @@
               "location": "features\\support\\steps\\steps.js:26"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -5588,8 +5583,8 @@
               "location": "features\\support\\steps\\steps.js:30"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 65000000
             }
           },
           {
@@ -5601,8 +5596,8 @@
               "location": "features\\support\\steps\\steps.js:52"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -5610,7 +5605,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 140000000
             }
           }
         ],
@@ -5641,9 +5636,8 @@
             "keyword": "Before",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 76000000,
-              "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+              "status": "passed",
+              "duration": 202000000
             }
           },
           {
@@ -5655,8 +5649,8 @@
               "location": "features\\support\\steps\\steps.js:13"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -5668,8 +5662,8 @@
               "location": "features\\support\\steps\\steps.js:26"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -5681,8 +5675,8 @@
               "location": "features\\support\\steps\\steps.js:30"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 56000000
             }
           },
           {
@@ -5694,8 +5688,8 @@
               "location": "features\\support\\steps\\steps.js:52"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -5703,7 +5697,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 178000000
             }
           }
         ],
