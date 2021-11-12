@@ -24,8 +24,7 @@ When(
             verb,
             endpoint,
             data,
-            Credentials,
-            "http://192.168.33.35:4040"
+            Credentials
         )
             .then(function (response) {
                 _response = response;

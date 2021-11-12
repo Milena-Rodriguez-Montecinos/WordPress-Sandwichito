@@ -16,7 +16,7 @@ Given(/^User wants to create a post with the following attributes$/, function (d
 });
 
 When(/^User save the new post a (.*) request to (.*) endpoint$/, async function (verb, endpoint) {
-    await HttpRequestManager.makeRequest(verb, endpoint, data, "AdminCredentials", "http://192.168.33.80:8080")
+    await HttpRequestManager.makeRequest(verb, endpoint, data, "AdminCredentials")
     .then(function (response) {
         _response = response;
     })
@@ -39,7 +39,7 @@ Given(/^User with valid credentials$/, function () {
 
 When(/^Executes a (.*) request to (.*) endpoint$/, async function (verb, endpoint) {
     _endpoint = endpoint.replace('{id}', this.id)
-    await HttpRequestManager.makeRequest(verb, _endpoint, data, "AdminCredentials", "http://192.168.33.80:8080")
+    await HttpRequestManager.makeRequest(verb, _endpoint, data, "AdminCredentials")
     .then(function (response) {
         _response = response;
     })
@@ -63,7 +63,7 @@ Given(/^User wants to update a post with the required attributes$/, function (da
 
 When(/^User update the post a (.*) request to (.*) endpoint$/, async function (verb, endpoint) {
     _endpoint = endpoint.replace('{id}', this.id)
-    await HttpRequestManager.makeRequest(verb, _endpoint, data, "AdminCredentials", "http://192.168.33.80:8080")
+    await HttpRequestManager.makeRequest(verb, _endpoint, data, "AdminCredentials")
     .then(function (response) {
         _response = response;
     })
@@ -86,7 +86,7 @@ Given(/^User wants to delete a post with an identifier$/, function (dataTable) {
 
 When(/^User delete the post a (.*) request to (.*) endpoint$/, async function (verb, endpoint) {
     _endpoint = endpoint.replace('{id}', this.id)
-    await HttpRequestManager.makeRequest(verb, _endpoint, '', "AdminCredentials", "http://192.168.33.80:8080")
+    await HttpRequestManager.makeRequest(verb, _endpoint, '', "AdminCredentials")
     .then(function (response) {
         _response = response;
     })

@@ -9,7 +9,7 @@ let _response = ''
 
 Before({tags: "@Posts-update or @Posts-delete or @Posts-read or @Posts-readById"}, async function() {
     let _response = ''
-    await HttpRequestManager.makeRequest('POST', endpoints.posts, payloads.Valid.POST, "AdminCredentials", "http://192.168.33.80:8080")
+    await HttpRequestManager.makeRequest('POST', endpoints.posts, payloads.Valid.POST, "AdminCredentials")
     .then(function (response) {
         expect(response.status).to.be.equal(201)
         expect(response.statusText).to.be.equal('Created')
@@ -26,7 +26,7 @@ Before({tags: "@Posts-update or @Posts-delete or @Posts-read or @Posts-readById"
 After({tags: "@Posts-update or @Posts-read or @Posts-readById"}, async function() {
     let _postId = this.id
     let _endpoint = endpoint.replace('{id}', _postId)
-    await HttpRequestManager.makeRequest('DELETE', _endpoint, '', "AdminCredentials", "http://192.168.33.80:8080")
+    await HttpRequestManager.makeRequest('DELETE', _endpoint, '', "AdminCredentials")
     .then(function (response) {
         _response = response;
     })
