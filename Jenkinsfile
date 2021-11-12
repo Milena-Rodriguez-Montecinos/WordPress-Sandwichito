@@ -20,7 +20,7 @@ pipeline {
               }  
           }
           post{
-            success {
+            failure {
               // publish html
               publishHTML target: [
                   allowMissing: false,
@@ -47,7 +47,7 @@ pipeline {
               }  
           } 
           post{
-            success {
+            failure {
               // publish html
               publishHTML target: [
                   allowMissing: false,
