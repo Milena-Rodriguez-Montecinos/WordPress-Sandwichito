@@ -24,7 +24,7 @@ pipeline {
           } 
           post {
             always {
-              publishHTML(allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'reports/', reportFiles: 'report.html', reportName: 'Cucumber report1')
+             
             }
            }               
         }
@@ -43,12 +43,28 @@ pipeline {
             }
            }           
         }
+
+        stage('Categories feature') {
+          steps {
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+              nodejs('Node16.4') {
+                sh 'npm run test -- --tags "@Categories"'
+              }
+            }
+          }
+          post {
+            always {
+              publishHTML(allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'reports/', reportFiles: 'report.html', reportName: 'Cucumber report2')
+            }
+           }           
+        }
       }
     }
 
 
     stage('Reports') {
         steps {
+         publishHTML(allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'reports/', reportFiles: 'report.html', reportName: 'Cucumber report1')
         cucumber (
                 reportTitle: 'My report',
                 fileIncludePattern: 'reports/report.json',
