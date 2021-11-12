@@ -2,6 +2,8 @@ import { Given, When, Then } from '@cucumber/cucumber';
 import { expect } from 'chai';
 import HttpRequestManager from '../../../src/common/api/http.request.manager'
 import payloads from '../../../src/resources/payloads/payloads.post.json'
+import logger from "../../../src/logger/logger.posts";
+
 
 let validCredentials = false;
 let _response = '';
@@ -15,13 +17,13 @@ Given(/^User wants to create a post with the following attributes$/, function (d
     validCredentials = true
 });
 
-When(/^User save the new post a (.*) request to (.*) endpoint$/, {timeout: 2 * 5000},async function (verb, endpoint) {
-    await HttpRequestManager.makeRequest(verb, endpoint, data, "AdminCredentials", "http://192.168.33.35:4040")
+When(/^User save the new post a (.*) request to (.*) endpoint$/, async function (verb, endpoint) {
+    await HttpRequestManager.makeRequest(verb, endpoint, data, "AdminCredentials")
     .then(function (response) {
         _response = response;
     })
     .catch(function (error) {
-        console.log(error)
+        logger.error(error)
         throw error
     })
 });
@@ -39,12 +41,12 @@ Given(/^User with valid credentials$/, function () {
 
 When(/^Executes a (.*) request to (.*) endpoint$/, async function (verb, endpoint) {
     _endpoint = endpoint.replace('{id}', this.id)
-    await HttpRequestManager.makeRequest(verb, _endpoint, data, "AdminCredentials", "http://192.168.33.35:4040")
+    await HttpRequestManager.makeRequest(verb, _endpoint, data, "AdminCredentials")
     .then(function (response) {
         _response = response;
     })
     .catch(function (error) {
-        console.log(error)
+        logger.error(error)
         throw error
     })
 })
@@ -63,12 +65,12 @@ Given(/^User wants to update a post with the required attributes$/, function (da
 
 When(/^User update the post a (.*) request to (.*) endpoint$/, async function (verb, endpoint) {
     _endpoint = endpoint.replace('{id}', this.id)
-    await HttpRequestManager.makeRequest(verb, _endpoint, data, "AdminCredentials", "http://192.168.33.35:4040")
+    await HttpRequestManager.makeRequest(verb, _endpoint, data, "AdminCredentials")
     .then(function (response) {
         _response = response;
     })
     .catch(function (error) {
-        console.log(error)
+        logger.error(error)
         throw error
     })
 });
@@ -86,12 +88,12 @@ Given(/^User wants to delete a post with an identifier$/, function (dataTable) {
 
 When(/^User delete the post a (.*) request to (.*) endpoint$/, async function (verb, endpoint) {
     _endpoint = endpoint.replace('{id}', this.id)
-    await HttpRequestManager.makeRequest(verb, _endpoint, '', "AdminCredentials", "http://192.168.33.35:4040")
+    await HttpRequestManager.makeRequest(verb, _endpoint, '', "AdminCredentials")
     .then(function (response) {
         _response = response;
     })
     .catch(function (error) {
-        console.log(error)
+        logger.error(error)
         throw error
     })
 });

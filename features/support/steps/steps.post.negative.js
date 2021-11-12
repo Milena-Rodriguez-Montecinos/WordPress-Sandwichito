@@ -3,6 +3,7 @@ import { expect } from "chai";
 import HttpRequestManager from "../../../src/common/api/http.request.manager";
 import payloads from "../../../src/resources/payloads/payloads.post.json";
 import JsonAccess from "./json.access";
+import logger from "../../../src/logger/logger.posts";
 
 let validCredentials = false;
 let _response = "";
@@ -20,13 +21,7 @@ When(
             validCredentials == true
                 ? "AdminCredentials"
                 : "InvalidCredentials";
-        await HttpRequestManager.makeRequest(
-            verb,
-            endpoint,
-            data,
-            Credentials,
-            "http://192.168.33.35:4040"
-        )
+        await HttpRequestManager.makeRequest(verb, endpoint, data, Credentials)
             .then(function (response) {
                 _response = response;
             })

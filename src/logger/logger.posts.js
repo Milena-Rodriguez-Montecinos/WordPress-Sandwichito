@@ -10,7 +10,7 @@ module.exports = createLogger({
     ),
     transports: [
         new transports.File({
-            filename: 'logs/log-test-item.log',
+            filename: 'logs/log-test-posts.log',
             handleExceptions: true,
             json: true,
             maxsize: 5242880, // 5MB

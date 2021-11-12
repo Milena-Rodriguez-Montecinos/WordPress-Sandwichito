@@ -3,20 +3,21 @@ import { expect } from 'chai';
 import HttpRequestManager from '../../../src/common/api/http.request.manager';
 import endpoints from '../../../src/resources/endpoints.json';
 import payloads from '../../../src/resources/payloads/payloads.post.json'
+import logger from "../../../src/logger/logger.posts";
 
 let endpoint = endpoints.postById
 let _response = ''
 
 Before({tags: "@Posts-update or @Posts-delete or @Posts-read or @Posts-readById"}, async function() {
     let _response = ''
-    await HttpRequestManager.makeRequest('POST', endpoints.posts, payloads.Valid.POST, "AdminCredentials", "http://192.168.33.35:4040")
+    await HttpRequestManager.makeRequest('POST', endpoints.posts, payloads.Valid.POST, "AdminCredentials")
     .then(function (response) {
         expect(response.status).to.be.equal(201)
         expect(response.statusText).to.be.equal('Created')
         _response = response
     })
     .catch(function(error) {
-        console.log(error)
+        logger.error(error)
         throw error
     })
 
@@ -26,12 +27,12 @@ Before({tags: "@Posts-update or @Posts-delete or @Posts-read or @Posts-readById"
 After({tags: "@Posts-update or @Posts-read or @Posts-readById"}, async function() {
     let _postId = this.id
     let _endpoint = endpoint.replace('{id}', _postId)
-    await HttpRequestManager.makeRequest('DELETE', _endpoint, '', "AdminCredentials", "http://192.168.33.35:4040")
+    await HttpRequestManager.makeRequest('DELETE', _endpoint, '', "AdminCredentials")
     .then(function (response) {
         _response = response;
     })
     .catch(function (error) {
-        console.log(error)
+        logger.error(error)
         throw error
     })
 })
