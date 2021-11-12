@@ -1,5 +1,5 @@
 @Categories
-Feature: Categories
+Feature: Categories CRUD
 
 @Categories-CRUD @Category-List
 Scenario: The endpoint should be able to get the collection of all categories

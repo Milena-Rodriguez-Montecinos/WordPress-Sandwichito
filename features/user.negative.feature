@@ -1,5 +1,5 @@
 @Users
-Feature: Users
+Feature: Users Negative Testing
 
 @UsersNegative @UsersRead-N
 Scenario: A user should not be able to retrieve the collection of all users
