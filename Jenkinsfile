@@ -31,12 +31,7 @@ pipeline {
                 sh 'npm run test -- --tags "@Pages"'
               }
             }
-          }
-          post {
-            always {
-              publishHTML(allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'reports/', reportFiles: 'report.html', reportName: 'Cucumber report2')
-            }
-           }           
+          }         
         }
 
         stage('Categories feature') {
@@ -46,12 +41,7 @@ pipeline {
                 sh 'npm run test -- --tags "@Categories"'
               }
             }
-          }
-          post {
-            always {
-              publishHTML(allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'reports/', reportFiles: 'report.html', reportName: 'Cucumber report2')
-            }
-           }           
+          }          
         }
       }
     }
