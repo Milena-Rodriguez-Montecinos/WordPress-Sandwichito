@@ -61,13 +61,13 @@ pipeline {
           }  
     }
 
-    stage('Publishing') {
+    /*stage('Publishing') {
           steps {
             sh 'docker login -u "${DOCKER_HUB_USR}" -p "${DOCKER_HUB_PSW}"'
             sh 'docker tag at14Team:"${TAG_VERSION}" "${DOCKER_HUB_USER}"/at14Team:"${TAG_VERSION}"'
             sh 'docker push "${DOCKER_HUB_USER}"/at14Team:"${TAG_VERSION}"'
           }
-    }  
+    }  */
   }
    post {
    success {
