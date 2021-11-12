@@ -5,7 +5,6 @@ import payloads from "../../../src/resources/payloads/payloads.post.json";
 import JsonAccess from "./json.access";
 import logger from "../../../src/logger/logger.posts";
 
-
 let validCredentials = false;
 let _response = "";
 let data = "";
@@ -22,12 +21,7 @@ When(
             validCredentials == true
                 ? "AdminCredentials"
                 : "InvalidCredentials";
-        await HttpRequestManager.makeRequest(
-            verb,
-            endpoint,
-            data,
-            Credentials
-        )
+        await HttpRequestManager.makeRequest(verb, endpoint, data, Credentials)
             .then(function (response) {
                 _response = response;
             })
@@ -43,7 +37,7 @@ Then(
         expect(_response.status).to.equal(statusCode);
         expect(_response.statusText).to.equal(statusText);
     }
-)
+);
 
 Given(/^A Valid credential to retrieve$/, function () {
     validCredentials = true;
