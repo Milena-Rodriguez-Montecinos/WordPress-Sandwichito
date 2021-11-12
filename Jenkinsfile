@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Install dependencies') {
           steps {
-              nodejs('Node16.10') {
+              nodejs('Node16.4') {
                 sh 'npm install'
               }
 
