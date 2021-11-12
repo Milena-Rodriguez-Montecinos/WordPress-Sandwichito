@@ -27,15 +27,15 @@ pipeline {
                 //sh 'npm run test -- --tags "@Users"'
               }  
           }
-          post{
+         /*post{
             success {
               //send emails
-              /*emailext (to: 'titocaceres.carlos@gmail.com', 
+              emailext (to: 'titocaceres.carlos@gmail.com', 
                 subject: "Email Report from - '${env.JOB_NAME}' about the 'User feature'", 
                 body: readFile("EXTRACTOR_SERVICE/coverage/lcov-report/index.html"), 
-                mimeType: 'text/html');           */     
+                mimeType: 'text/html');               
             }
-          }
+          }*/
 
         }
 
@@ -46,14 +46,14 @@ pipeline {
                 //sh 'npm run test -- --tags "@Pages"'
               }  
           } 
-          post{
+         /* post{
             success {
-              /*emailext (to: 'titocaceres.carlos@gmail.com', 
+              emailext (to: 'titocaceres.carlos@gmail.com', 
                 subject: "Email Report from - '${env.JOB_NAME}' about the 'Pages feature'", 
                 body: readFile("MLendPoint/coverage/lcov-report/index.html"), 
-                mimeType: 'text/html');     */           
+                mimeType: 'text/html');           
             }
-          }                  
+          }   */               
         }     
       }     
       post{
