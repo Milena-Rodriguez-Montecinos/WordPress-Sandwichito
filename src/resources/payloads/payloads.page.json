@@ -1,0 +1,36 @@
+{
+    "Valid": {
+        "POST": {
+            "title": "title-example-with-Postman11",
+            "content": "content",
+            "categories": "news",
+            "status": "publish"
+        },
+        "PUT": {
+            "title": "title-example-with-PUT"
+        },
+        "DELETE": {
+            "DeleteUser": {
+                "force": true,
+                "reassign": 1
+            }
+        }
+    },
+    "Invalid": {
+        "POSTINT": {
+            "title": 1234
+        },
+        "EMPTY": {},
+        "PASSWORD": {
+            "title": "title-example-with-cucumber",
+            "content": "content",
+            "categories": "news",
+            "status": "publish",
+            "password": "123486"
+        },
+        "BADPASSWORD": {
+            "id":"",
+            "password": ""
+        }
+    }
+}

@@ -41,8 +41,7 @@ When(/^I execute a (.*) request to (.*) endpoint$/, async function (verb, endpoi
         _response = response;
         _id = response.data.id;
     })
-    .catch(function (error) {
-        console.log(error)        
+    .catch(function (error) {    
         _error = error
     }) 
     if(_id != null) {

@@ -4,7 +4,7 @@
   "description": "",
   "main": "babel.config.js",
   "scripts": {
-    "test": "cucumber-js --require-module @babel/register --format @cucumber/pretty-formatter --format message:./reports/report.json --publish-quiet"
+    "test": "cucumber-js --require-module @babel/register --format @cucumber/pretty-formatter --format json:./reports/report.json --format html:./reports/report.html --publish-quiet"
   },
   "repository": {
     "type": "git",
