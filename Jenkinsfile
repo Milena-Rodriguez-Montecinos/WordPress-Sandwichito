@@ -65,11 +65,21 @@ pipeline {
           }
         }
 
-        stage('Generate HTML report') {
-          steps {
-            cucumber(fileIncludePattern: 'reports/*.json', reportTitle: 'Wordpres-Test')
-          }
-        }
+    stage('Install dependencies') {
+      steps {
+        cucumber buildStatus: 'UNSTABLE',
+                reportTitle: 'My report',
+                fileIncludePattern: '**/*.json',
+                trendsLimit: 10,
+                classifications: [
+                    [
+                        'key': 'Browser',
+                        'value': 'Firefox'
+                    ]
+                ]
+      }
+    }
+
 
       }
       environment {
