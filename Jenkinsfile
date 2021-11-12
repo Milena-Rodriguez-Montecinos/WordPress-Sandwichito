@@ -27,16 +27,6 @@ pipeline {
                 //sh 'npm run test -- --tags "@Users"'
               }  
           }
-         /*post{
-            success {
-              //send emails
-              emailext (to: 'titocaceres.carlos@gmail.com', 
-                subject: "Email Report from - '${env.JOB_NAME}' about the 'User feature'", 
-                body: readFile("EXTRACTOR_SERVICE/coverage/lcov-report/index.html"), 
-                mimeType: 'text/html');               
-            }
-          }*/
-
         }
 
         stage('Pages feature') {
@@ -46,31 +36,23 @@ pipeline {
                 //sh 'npm run test -- --tags "@Pages"'
               }  
           } 
-         /* post{
-            success {
-              emailext (to: 'titocaceres.carlos@gmail.com', 
-                subject: "Email Report from - '${env.JOB_NAME}' about the 'Pages feature'", 
-                body: readFile("MLendPoint/coverage/lcov-report/index.html"), 
-                mimeType: 'text/html');           
-            }
-          }*/                
+                  
         }     
       }     
-      post{
+    }
+    post{
         success {
-              // publish html
-              publishHTML target: [
-                  allowMissing: false,
-                  alwaysLinkToLastBuild: false,
-                  keepAll: true,
-                  reportDir: 'reports/',
-                  reportFiles: 'report.html',
-                  reportName: 'User feature'
-                ]      
-            }
-        
-      }
-    }    
+          // publish html
+          publishHTML target: [
+              allowMissing: false,
+              alwaysLinkToLastBuild: false,
+              keepAll: true,
+              reportDir: 'reports/',
+              reportFiles: 'report.html',
+              reportName: 'Pages feature report'
+            ]        
+        }
+      }    
 
     stage('Package-the project') {
 
@@ -79,13 +61,13 @@ pipeline {
           }  
     }
 
-    /*stage('Publishing') {
+    stage('Publishing') {
           steps {
             sh 'docker login -u "${DOCKER_HUB_USR}" -p "${DOCKER_HUB_PSW}"'
             sh 'docker tag at14Team:"${TAG_VERSION}" "${DOCKER_HUB_USER}"/at14Team:"${TAG_VERSION}"'
             sh 'docker push "${DOCKER_HUB_USER}"/at14Team:"${TAG_VERSION}"'
           }
-    }  */
+    }  
   }
    post {
    success {
