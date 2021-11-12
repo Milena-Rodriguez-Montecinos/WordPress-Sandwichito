@@ -9,7 +9,6 @@ pipeline {
 
           }
     }
-  }
 
   stage('Tests with Cucumber') {
 
@@ -66,5 +65,8 @@ pipeline {
           }                  
         }     
       }     
-    }
+    }    
+  }
+
+
 }
