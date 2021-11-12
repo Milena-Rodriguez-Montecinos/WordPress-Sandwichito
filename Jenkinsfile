@@ -62,6 +62,7 @@ pipeline {
                 reportTitle: 'My report',
                 fileIncludePattern: 'reports/report.json',
                 )
+        echo "CUCUMBER tests report: ${BUILD_URL}cucumber-html-reports/overview-features.html"
     }
     success {
       mail(to: 'titocaceres.carlos@gmail.com', subject: "Build: (${BUILD_DISPLAY_NAME}) from branch (${BRANCH_NAME}) finished SUCCESFULLY!!", body: "To view more details about it : ${BUILD_URL} -- ${RUN_ARTIFACTS_DISPLAY_URL}")
