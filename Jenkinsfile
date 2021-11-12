@@ -21,7 +21,7 @@ pipeline {
               }  
           }
           post{
-            failure {
+            success {
               // publish html
               publishHTML target: [
                   allowMissing: false,
@@ -32,10 +32,10 @@ pipeline {
                   reportName: 'User feature'
                 ]
               //send emails
-              emailext (to: 'titocaceres.carlos@gmail.com', 
+              /*emailext (to: 'titocaceres.carlos@gmail.com', 
                 subject: "Email Report from - '${env.JOB_NAME}' about the 'User feature'", 
                 body: readFile("EXTRACTOR_SERVICE/coverage/lcov-report/index.html"), 
-                mimeType: 'text/html');                
+                mimeType: 'text/html');           */     
             }
           }
 
@@ -49,7 +49,7 @@ pipeline {
               }  
           } 
           post{
-            failure {
+            success {
               // publish html
               publishHTML target: [
                   allowMissing: false,
@@ -59,16 +59,28 @@ pipeline {
                   reportFiles: 'report.html',
                   reportName: 'Pages feature report'
                 ]
-              emailext (to: 'titocaceres.carlos@gmail.com', 
+              /*emailext (to: 'titocaceres.carlos@gmail.com', 
                 subject: "Email Report from - '${env.JOB_NAME}' about the 'Pages feature'", 
                 body: readFile("MLendPoint/coverage/lcov-report/index.html"), 
-                mimeType: 'text/html');                
+                mimeType: 'text/html');     */           
             }
           }                  
         }     
       }     
     }    
   }
+   post {
+   success {
+    mail to: 'titocaceres.carlos@gmail.com',
+      subject: "Build: (${BUILD_DISPLAY_NAME}) from branch (${BRANCH_NAME}) finished SUCCESFULLY!!", 
+      body: "To view more details about it : ${BUILD_URL} -- ${RUN_ARTIFACTS_DISPLAY_URL}"          
+      }
+    failure {
+      mail to: 'titocaceres.carlos@gmail.com',
+        subject: "Build: (${BUILD_DISPLAY_NAME}) from branch (${BRANCH_NAME}) FAILED!!!", 
+        body: "To view more details about it : ${BUILD_URL} -- ${RUN_ARTIFACTS_DISPLAY_URL}"          
+      }        
+  }   
 
 
 }
