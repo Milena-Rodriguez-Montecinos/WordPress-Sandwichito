@@ -39,7 +39,7 @@ pipeline {
         }
       }
       post {
-        success {
+        always {
           publishHTML(allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'reports/', reportFiles: 'report.html', reportName: 'Pages feature report')
         }
       }       
