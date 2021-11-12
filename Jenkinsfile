@@ -53,7 +53,7 @@ pipeline {
                   allowMissing: false,
                   alwaysLinkToLastBuild: false,
                   keepAll: true,
-                  reportDir: 'report/',
+                  reportDir: 'reports/',
                   reportFiles: 'report.html',
                   reportName: 'Machine Learning report'
                 ]
