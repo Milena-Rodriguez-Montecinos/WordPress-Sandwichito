@@ -81,12 +81,17 @@ pipeline {
       }     
     }    
 
-    stage('Package-the project') {
-
-          steps {
-
-              sh 'docker build -t at14-team2:"${TAG_VERSION}" .'
-          }  
+    stage('Generate HTML report') {
+        cucumber buildStatus: 'UNSTABLE',
+                reportTitle: 'My report',
+                fileIncludePattern: 'reports/report.json',
+                trendsLimit: 10,
+                classifications: [
+                    [
+                        'key': 'Browser',
+                        'value': 'Firefox'
+                    ]
+                ]
     }
   }
    post {
