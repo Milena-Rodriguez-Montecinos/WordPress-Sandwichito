@@ -1,12 +1,6 @@
 pipeline {
   agent any
-  environment {
-    DOCKER_HUB_USER = 'titosvir'
-    DOCKER_HUB = credentials('docker')
-    TAG_VERSION = '1.0'
-    REPOSITORY_NAME = 'ct_services'
-    SONAR_TOKEN = credentials('sonar_tocken')
-  }
+
 
   stages {
     stage('Install dependencies') {
@@ -97,6 +91,14 @@ pipeline {
         body: "To view more details about it : ${BUILD_URL} -- ${RUN_ARTIFACTS_DISPLAY_URL}"          
       }        
   }   
+
+  environment {
+    DOCKER_HUB_USER = 'titosvir'
+    DOCKER_HUB = credentials('docker')
+    TAG_VERSION = '1.0'
+    REPOSITORY_NAME = 'ct_services'
+    SONAR_TOKEN = credentials('sonar_tocken')
+  }
 
 
 }
