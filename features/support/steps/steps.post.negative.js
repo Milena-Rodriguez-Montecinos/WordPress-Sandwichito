@@ -3,6 +3,8 @@ import { expect } from "chai";
 import HttpRequestManager from "../../../src/common/api/http.request.manager";
 import payloads from "../../../src/resources/payloads/payloads.post.json";
 import JsonAccess from "./json.access";
+import logger from "../../../src/logger/logger.posts";
+
 
 let validCredentials = false;
 let _response = "";
@@ -41,7 +43,9 @@ Then(
         expect(_response.status).to.equal(statusCode);
         expect(_response.statusText).to.equal(statusText);
     }
-);
+).catch(function (error){
+    logger.error(error)
+});
 
 Given(/^A Valid credential to retrieve$/, function () {
     validCredentials = true;

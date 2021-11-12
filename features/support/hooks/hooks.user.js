@@ -3,6 +3,7 @@ import HttpRequestManager from "../../../src/common/api/http.request.manager";
 import endpoints from '../../../src/resources/endpoints.json'
 import payloads from '../../../src/resources/payloads/payloads.user.json'
 import { expect } from 'chai';
+import logger from "../../../src/logger/logger.user";
 
 Before({tags: "@ReadById or @Update or @Delete or @UsersReadById-N or @UsersUpdate-N or @UsersDelete-N"}, async function () {
     let _response = ''
@@ -13,7 +14,7 @@ Before({tags: "@ReadById or @Update or @Delete or @UsersReadById-N or @UsersUpda
         _response = response
     })
     .catch(function (error) {
-        console.log(error)
+        logger.error(error)
         throw error
     })
     this.id = _response.data.id
@@ -22,14 +23,15 @@ Before({tags: "@ReadById or @Update or @Delete or @UsersReadById-N or @UsersUpda
 After({tags: "@Create or @ReadById or @Update or @UsersCreate-N or @UsersReadById-N or @UsersUpdate-N or @UsersDelete-N"}, async function () {
     let _postId = this.id
     if(_postId != undefined) {
-        console.log(endpoints.usersById.replace('{id}', _postId))
+        logger.info(endpoints.usersById.replace('{id}', _postId))
         await HttpRequestManager.makeRequest('DELETE', endpoints.usersById.replace('{id}', _postId), payloads.Valid.DELETE.DeleteUser)
         .then(function (response) {
             expect(response.status).to.equal(200)
             expect(response.statusText).to.equal('OK')
-            console.log(`User ${_postId} deleted`)
+            logger.info(`User ${_postId} deleted`)
         })
         .catch(function (error) {
+            logger.error(error)
             throw error
         })
     }    

@@ -4,7 +4,7 @@
     "elements": [
       {
         "description": "",
-        "id": "categories;the-endpoint-should-be-able-to-get-the-collection-of-all-categories",
+        "id": "categories-crud;the-endpoint-should-be-able-to-get-the-collection-of-all-categories",
         "keyword": "Scenario",
         "line": 5,
         "name": "The endpoint should be able to get the collection of all categories",
@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 2000000
             }
           },
           {
@@ -45,7 +45,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 2000000
             }
           }
         ],
@@ -67,7 +67,7 @@
       },
       {
         "description": "",
-        "id": "categories;the-endpoint-should-be-able-to-create-a-new-category",
+        "id": "categories-crud;the-endpoint-should-be-able-to-create-a-new-category",
         "keyword": "Scenario",
         "line": 11,
         "name": "The endpoint should be able to create a new category",
@@ -82,7 +82,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -119,7 +119,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 68000000
+              "duration": 57000000
             }
           },
           {
@@ -130,6 +130,14 @@
             "match": {
               "location": "features\\support\\steps\\steps.js:52"
             },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
             "result": {
               "status": "passed",
               "duration": 1000000
@@ -154,11 +162,20 @@
       },
       {
         "description": "",
-        "id": "categories;a-category-should-be-able-to-retrieve-by-id",
+        "id": "categories-crud;a-category-should-be-able-to-retrieve-by-id",
         "keyword": "Scenario",
         "line": 19,
         "name": "A category should be able to retrieve by id",
         "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 63000000,
+              "error_message": "Error: Request failed with status code 400\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+            }
+          },
           {
             "arguments": [],
             "keyword": "Given ",
@@ -168,8 +185,8 @@
               "location": "features\\support\\steps\\steps.js:13"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -192,8 +209,8 @@
               "location": "features\\support\\steps\\steps.js:22"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -205,8 +222,8 @@
               "location": "features\\support\\steps\\steps.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 69000000
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -218,9 +235,16 @@
               "location": "features\\support\\steps\\steps.js:52"
             },
             "result": {
-              "status": "failed",
-              "duration": 4000000,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -404\n    +200\n\n    at World.<anonymous> (C:\\Cucumber\\WordPress-Sandwichito\\features\\support\\steps\\/steps.js:54:43)"
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1000000
             }
           }
         ],
@@ -242,11 +266,20 @@
       },
       {
         "description": "",
-        "id": "categories;the-endpoint-should-be-able-to-update-the-category",
+        "id": "categories-crud;the-endpoint-should-be-able-to-update-the-category",
         "keyword": "Scenario",
         "line": 27,
         "name": "The endpoint should be able to update the category",
         "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 64000000,
+              "error_message": "Error: Request failed with status code 400\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+            }
+          },
           {
             "arguments": [],
             "keyword": "Given ",
@@ -256,8 +289,8 @@
               "location": "features\\support\\steps\\steps.js:13"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -280,8 +313,8 @@
               "location": "features\\support\\steps\\steps.js:22"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -293,8 +326,8 @@
               "location": "features\\support\\steps\\steps.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 83000000
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -306,9 +339,8 @@
               "location": "features\\support\\steps\\steps.js:67"
             },
             "result": {
-              "status": "failed",
-              "duration": 1000000,
-              "error_message": "TypeError: Cannot read property 'id' of undefined\n    at World.<anonymous> (C:\\Cucumber\\WordPress-Sandwichito\\features\\support\\steps\\/steps.js:74:35)"
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -322,6 +354,14 @@
             "result": {
               "status": "skipped",
               "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1000000
             }
           }
         ],
@@ -343,11 +383,20 @@
       },
       {
         "description": "",
-        "id": "categories;the-endpoint-should-be-able-to-delete-the-category-select-by-id",
+        "id": "categories-crud;the-endpoint-should-be-able-to-delete-the-category-select-by-id",
         "keyword": "Scenario",
         "line": 36,
         "name": "The endpoint should be able TO DELETE the category select by ID",
         "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 88000000,
+              "error_message": "Error: Request failed with status code 400\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+            }
+          },
           {
             "arguments": [],
             "keyword": "Given ",
@@ -357,8 +406,8 @@
               "location": "features\\support\\steps\\steps.js:13"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -381,7 +430,7 @@
               "location": "features\\support\\steps\\steps.js:22"
             },
             "result": {
-              "status": "passed",
+              "status": "skipped",
               "duration": 0
             }
           },
@@ -394,8 +443,8 @@
               "location": "features\\support\\steps\\steps.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 67000000
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -407,9 +456,8 @@
               "location": "features\\support\\steps\\steps.js:67"
             },
             "result": {
-              "status": "failed",
-              "duration": 1000000,
-              "error_message": "TypeError: Cannot read property 'deleted' of undefined\n    at World.<anonymous> (C:\\Cucumber\\WordPress-Sandwichito\\features\\support\\steps\\/steps.js:78:35)"
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -443,10 +491,10 @@
         "type": "scenario"
       }
     ],
-    "id": "categories",
+    "id": "categories-crud",
     "line": 2,
     "keyword": "Feature",
-    "name": "Categories",
+    "name": "Categories CRUD",
     "tags": [
       {
         "name": "@Categories",
@@ -460,11 +508,20 @@
     "elements": [
       {
         "description": "",
-        "id": "categories;the-endpoint-should-verify-that-a-non-authorized-user-cannot-be-able-to-get-the-collection-of-all-categories.",
+        "id": "categories-negative-testing;the-endpoint-should-verify-that-a-non-authorized-user-cannot-be-able-to-get-the-collection-of-all-categories.",
         "keyword": "Scenario",
         "line": 5,
         "name": "The endpoint should Verify that a non authorized user cannot be able to get the collection of all categories.",
         "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 103000000,
+              "error_message": "Error: Request failed with status code 400\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+            }
+          },
           {
             "arguments": [],
             "keyword": "Given ",
@@ -474,7 +531,7 @@
               "location": "features\\support\\steps\\steps.js:13"
             },
             "result": {
-              "status": "passed",
+              "status": "skipped",
               "duration": 0
             }
           },
@@ -487,7 +544,7 @@
               "location": "features\\support\\steps\\steps.js:26"
             },
             "result": {
-              "status": "passed",
+              "status": "skipped",
               "duration": 0
             }
           },
@@ -500,8 +557,8 @@
               "location": "features\\support\\steps\\steps.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 87000000
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -513,9 +570,16 @@
               "location": "features\\support\\steps\\steps.js:52"
             },
             "result": {
-              "status": "failed",
-              "duration": 1000000,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -200\n    +400\n\n    at World.<anonymous> (C:\\Cucumber\\WordPress-Sandwichito\\features\\support\\steps\\/steps.js:58:37)"
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1000000
             }
           }
         ],
@@ -537,7 +601,7 @@
       },
       {
         "description": "",
-        "id": "categories;the-endpoint-should-verify-that-a-non-authorized-user-cannot-be-able-to-update-or-create-a-category.",
+        "id": "categories-negative-testing;the-endpoint-should-verify-that-a-non-authorized-user-cannot-be-able-to-update-or-create-a-category.",
         "keyword": "Scenario",
         "line": 15,
         "name": "The endpoint should Verify that a non authorized user cannot be able to update or create a category.",
@@ -578,7 +642,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 72000000
+              "duration": 68000000
             }
           },
           {
@@ -591,7 +655,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 1000000,
+              "duration": 4000000,
               "error_message": "AssertionError\n    + expected - actual\n\n    -401\n    +400\n\n    at World.<anonymous> (C:\\Cucumber\\WordPress-Sandwichito\\features\\support\\steps\\/steps.js:54:43)"
             }
           }
@@ -614,7 +678,7 @@
       },
       {
         "description": "",
-        "id": "categories;the-endpoint-should-verify-that-a-non-authorized-user-cannot-be-able-to-update-or-create-a-category.",
+        "id": "categories-negative-testing;the-endpoint-should-verify-that-a-non-authorized-user-cannot-be-able-to-update-or-create-a-category.",
         "keyword": "Scenario",
         "line": 15,
         "name": "The endpoint should Verify that a non authorized user cannot be able to update or create a category.",
@@ -642,7 +706,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -655,7 +719,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 73000000
+              "duration": 60000000
             }
           },
           {
@@ -690,11 +754,20 @@
       },
       {
         "description": "",
-        "id": "categories;the-endpoint-should-verify-that-a-non-authorized-user-cannot-be-able-to-delete-a-category.",
+        "id": "categories-negative-testing;the-endpoint-should-verify-that-a-non-authorized-user-cannot-be-able-to-delete-a-category.",
         "keyword": "Scenario",
         "line": 26,
         "name": "The endpoint should Verify that a non authorized user cannot be able to delete a category.",
         "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 79000000,
+              "error_message": "Error: Request failed with status code 400\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+            }
+          },
           {
             "arguments": [],
             "keyword": "Given ",
@@ -704,7 +777,7 @@
               "location": "features\\support\\steps\\steps.js:13"
             },
             "result": {
-              "status": "passed",
+              "status": "skipped",
               "duration": 0
             }
           },
@@ -717,7 +790,7 @@
               "location": "features\\support\\steps\\steps.js:26"
             },
             "result": {
-              "status": "passed",
+              "status": "skipped",
               "duration": 0
             }
           },
@@ -730,8 +803,8 @@
               "location": "features\\support\\steps\\steps.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 68000000
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -743,8 +816,8 @@
               "location": "features\\support\\steps\\steps.js:52"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "skipped",
+              "duration": 0
             }
           }
         ],
@@ -766,11 +839,20 @@
       },
       {
         "description": "",
-        "id": "categories;the-endpoint-should-verify-that-a-non-id-concret-cannot-be-able-to-get-the-collection-data-of-specific-category.",
+        "id": "categories-negative-testing;the-endpoint-should-verify-that-a-non-id-concret-cannot-be-able-to-get-the-collection-data-of-specific-category.",
         "keyword": "Scenario",
         "line": 36,
         "name": "The endpoint should Verify that a non id concret cannot be able to get the collection data of specific category.",
         "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 65000000,
+              "error_message": "Error: Request failed with status code 400\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+            }
+          },
           {
             "arguments": [],
             "keyword": "Given ",
@@ -780,7 +862,7 @@
               "location": "features\\support\\steps\\steps.js:13"
             },
             "result": {
-              "status": "passed",
+              "status": "skipped",
               "duration": 0
             }
           },
@@ -793,8 +875,8 @@
               "location": "features\\support\\steps\\steps.js:26"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -806,8 +888,8 @@
               "location": "features\\support\\steps\\steps.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 84000000
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -818,6 +900,14 @@
             "match": {
               "location": "features\\support\\steps\\steps.js:52"
             },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
             "result": {
               "status": "passed",
               "duration": 1000000
@@ -842,7 +932,7 @@
       },
       {
         "description": "",
-        "id": "categories;the-endpoint-should-verify-that-a-non-name-cannot-be-able-to-create-a-category.",
+        "id": "categories-negative-testing;the-endpoint-should-verify-that-a-non-name-cannot-be-able-to-create-a-category.",
         "keyword": "Scenario",
         "line": 46,
         "name": "The endpoint should Verify that a non name cannot be able to create a category.",
@@ -870,7 +960,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -883,7 +973,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 109000000
+              "duration": 57000000
             }
           },
           {
@@ -918,7 +1008,7 @@
       },
       {
         "description": "",
-        "id": "categories;the-endpoint-should-verify-that-a-non-id-cannot-be-able-to-update-a-category.",
+        "id": "categories-negative-testing;the-endpoint-should-verify-that-a-non-id-cannot-be-able-to-update-a-category.",
         "keyword": "Scenario",
         "line": 56,
         "name": "The endpoint should Verify that a non id cannot be able to update a category.",
@@ -933,7 +1023,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -959,7 +1049,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 87000000
+              "duration": 64000000
             }
           },
           {
@@ -972,7 +1062,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ],
@@ -994,11 +1084,20 @@
       },
       {
         "description": "",
-        "id": "categories;the-endpoint-should-verify-that-a-non-id-and-force-cannot-be-able-to-delete-a-category.",
+        "id": "categories-negative-testing;the-endpoint-should-verify-that-a-non-id-and-force-cannot-be-able-to-delete-a-category.",
         "keyword": "Scenario",
         "line": 66,
         "name": "The endpoint should Verify that a non id and force cannot be able to delete a category.",
         "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 94000000,
+              "error_message": "Error: Request failed with status code 400\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+            }
+          },
           {
             "arguments": [],
             "keyword": "Given ",
@@ -1008,7 +1107,7 @@
               "location": "features\\support\\steps\\steps.js:13"
             },
             "result": {
-              "status": "passed",
+              "status": "skipped",
               "duration": 0
             }
           },
@@ -1032,8 +1131,8 @@
               "location": "features\\support\\steps\\steps.js:22"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -1045,8 +1144,8 @@
               "location": "features\\support\\steps\\steps.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 98000000
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -1058,8 +1157,8 @@
               "location": "features\\support\\steps\\steps.js:52"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "skipped",
+              "duration": 0
             }
           }
         ],
@@ -1080,10 +1179,10 @@
         "type": "scenario"
       }
     ],
-    "id": "categories",
+    "id": "categories-negative-testing",
     "line": 2,
     "keyword": "Feature",
-    "name": "Categories",
+    "name": "Categories Negative Testing",
     "tags": [
       {
         "name": "@Categories",
@@ -1097,7 +1196,7 @@
     "elements": [
       {
         "description": "",
-        "id": "pages;a-user-should-be-able-to-retrieve-the-collection-of-all-pages",
+        "id": "pages-crud;a-user-should-be-able-to-retrieve-the-collection-of-all-pages",
         "keyword": "Scenario",
         "line": 5,
         "name": "A user should be able to retrieve the collection of all pages",
@@ -1108,11 +1207,11 @@
             "line": 6,
             "name": "Given valid credentials",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:13"
+              "location": "features\\support\\steps\\steps.pages.js:14"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -1121,11 +1220,11 @@
             "line": 7,
             "name": "Executing GET request to wp/v2/pages page endpoint",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:25"
+              "location": "features\\support\\steps\\steps.pages.js:26"
             },
             "result": {
               "status": "passed",
-              "duration": 139000000
+              "duration": 99000000
             }
           },
           {
@@ -1134,11 +1233,11 @@
             "line": 8,
             "name": "the status code should be 200 OK",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:56"
+              "location": "features\\support\\steps\\steps.pages.js:59"
             },
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 1000000
             }
           }
         ],
@@ -1160,7 +1259,7 @@
       },
       {
         "description": "",
-        "id": "pages;a-user-should-be-able-to-retrieve-the-collection-of-an-specific-page",
+        "id": "pages-crud;a-user-should-be-able-to-retrieve-the-collection-of-an-specific-page",
         "keyword": "Scenario",
         "line": 11,
         "name": "A user should be able to retrieve the collection of an specific page",
@@ -1170,7 +1269,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 144000000
+              "duration": 128000000
             }
           },
           {
@@ -1179,11 +1278,11 @@
             "line": 12,
             "name": "Given valid credentials",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:13"
+              "location": "features\\support\\steps\\steps.pages.js:14"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -1192,11 +1291,11 @@
             "line": 13,
             "name": "Executing GET request to wp/v2/pages/{id} page endpoint",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:25"
+              "location": "features\\support\\steps\\steps.pages.js:26"
             },
             "result": {
               "status": "passed",
-              "duration": 136000000
+              "duration": 117000000
             }
           },
           {
@@ -1205,11 +1304,11 @@
             "line": 14,
             "name": "the status code should be 200 OK",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:56"
+              "location": "features\\support\\steps\\steps.pages.js:59"
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 0
             }
           },
           {
@@ -1217,7 +1316,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 285000000
+              "duration": 310000000
             }
           }
         ],
@@ -1239,7 +1338,7 @@
       },
       {
         "description": "",
-        "id": "pages;a-user-should-be-able-to-create-a-new-page",
+        "id": "pages-crud;a-user-should-be-able-to-create-a-new-page",
         "keyword": "Scenario",
         "line": 17,
         "name": "A user should be able to create a new page",
@@ -1250,11 +1349,11 @@
             "line": 18,
             "name": "Given valid credentials",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:13"
+              "location": "features\\support\\steps\\steps.pages.js:14"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -1274,11 +1373,11 @@
             "line": 19,
             "name": "Given the required payload",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:17"
+              "location": "features\\support\\steps\\steps.pages.js:18"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -1287,11 +1386,11 @@
             "line": 21,
             "name": "Executing POST request to wp/v2/pages page endpoint",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:25"
+              "location": "features\\support\\steps\\steps.pages.js:26"
             },
             "result": {
               "status": "passed",
-              "duration": 101000000
+              "duration": 96000000
             }
           },
           {
@@ -1300,11 +1399,11 @@
             "line": 22,
             "name": "the status code should be 201 Created",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:56"
+              "location": "features\\support\\steps\\steps.pages.js:59"
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 1000000
             }
           },
           {
@@ -1312,7 +1411,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 201000000
+              "duration": 149000000
             }
           }
         ],
@@ -1334,7 +1433,7 @@
       },
       {
         "description": "",
-        "id": "pages;a-user-should-be-able-to-update-a-page",
+        "id": "pages-crud;a-user-should-be-able-to-update-a-page",
         "keyword": "Scenario",
         "line": 25,
         "name": "A user should be able to update a page",
@@ -1344,7 +1443,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 108000000
+              "duration": 70000000
             }
           },
           {
@@ -1353,11 +1452,11 @@
             "line": 26,
             "name": "Given valid credentials",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:13"
+              "location": "features\\support\\steps\\steps.pages.js:14"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -1377,11 +1476,11 @@
             "line": 27,
             "name": "Given the required payload",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:17"
+              "location": "features\\support\\steps\\steps.pages.js:18"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -1390,11 +1489,11 @@
             "line": 29,
             "name": "Executing POST request to wp/v2/pages/{id} page endpoint",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:25"
+              "location": "features\\support\\steps\\steps.pages.js:26"
             },
             "result": {
               "status": "passed",
-              "duration": 107000000
+              "duration": 91000000
             }
           },
           {
@@ -1403,7 +1502,7 @@
             "line": 30,
             "name": "The page has been updated",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:66"
+              "location": "features\\support\\steps\\steps.pages.js:67"
             },
             "result": {
               "status": "passed",
@@ -1416,11 +1515,11 @@
             "line": 31,
             "name": "the status code should be 200 OK",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:56"
+              "location": "features\\support\\steps\\steps.pages.js:59"
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 1000000
             }
           },
           {
@@ -1428,7 +1527,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 164000000
+              "duration": 192000000
             }
           }
         ],
@@ -1450,7 +1549,7 @@
       },
       {
         "description": "",
-        "id": "pages;a-user-should-be-able-to-delete-a-page",
+        "id": "pages-crud;a-user-should-be-able-to-delete-a-page",
         "keyword": "Scenario",
         "line": 34,
         "name": "A user should be able to delete a page",
@@ -1460,7 +1559,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 92000000
+              "duration": 73000000
             }
           },
           {
@@ -1469,7 +1568,7 @@
             "line": 35,
             "name": "Given valid credentials",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:13"
+              "location": "features\\support\\steps\\steps.pages.js:14"
             },
             "result": {
               "status": "passed",
@@ -1482,11 +1581,11 @@
             "line": 36,
             "name": "Executing DELETE request to wp/v2/pages/{id} page endpoint",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:25"
+              "location": "features\\support\\steps\\steps.pages.js:26"
             },
             "result": {
               "status": "passed",
-              "duration": 147000000
+              "duration": 210000000
             }
           },
           {
@@ -1495,7 +1594,7 @@
             "line": 37,
             "name": "The page has been deleted",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:66"
+              "location": "features\\support\\steps\\steps.pages.js:67"
             },
             "result": {
               "status": "passed",
@@ -1508,11 +1607,11 @@
             "line": 38,
             "name": "the status code should be 200 OK",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:56"
+              "location": "features\\support\\steps\\steps.pages.js:59"
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 0
             }
           }
         ],
@@ -1533,10 +1632,10 @@
         "type": "scenario"
       }
     ],
-    "id": "pages",
+    "id": "pages-crud",
     "line": 2,
     "keyword": "Feature",
-    "name": "Pages",
+    "name": "Pages CRUD",
     "tags": [
       {
         "name": "@Pages",
@@ -1550,7 +1649,7 @@
     "elements": [
       {
         "description": "",
-        "id": "pages;verify-that-a-non-authorized-user-cannot-create-a-page",
+        "id": "pages-negative-testing;verify-that-a-non-authorized-user-cannot-create-a-page",
         "keyword": "Scenario",
         "line": 5,
         "name": "Verify that a non authorized user cannot create a page",
@@ -1561,7 +1660,7 @@
             "line": 6,
             "name": "Does not using valid credentials",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:21"
+              "location": "features\\support\\steps\\steps.pages.js:22"
             },
             "result": {
               "status": "passed",
@@ -1585,11 +1684,11 @@
             "line": 7,
             "name": "Given the required payload",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:17"
+              "location": "features\\support\\steps\\steps.pages.js:18"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -1598,11 +1697,11 @@
             "line": 9,
             "name": "Executing POST request to wp/v2/pages page endpoint",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:25"
+              "location": "features\\support\\steps\\steps.pages.js:26"
             },
             "result": {
               "status": "passed",
-              "duration": 64000000
+              "duration": 49000000
             }
           },
           {
@@ -1611,11 +1710,11 @@
             "line": 10,
             "name": "the status code should be 401 Unauthorized",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:56"
+              "location": "features\\support\\steps\\steps.pages.js:59"
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 1000000
             }
           }
         ],
@@ -1637,7 +1736,7 @@
       },
       {
         "description": "",
-        "id": "pages;verify-that-a-non-authorized-user-cannot-update-a-page",
+        "id": "pages-negative-testing;verify-that-a-non-authorized-user-cannot-update-a-page",
         "keyword": "Scenario",
         "line": 13,
         "name": "Verify that a non authorized user cannot update a page",
@@ -1647,7 +1746,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 83000000
+              "duration": 76000000
             }
           },
           {
@@ -1656,11 +1755,11 @@
             "line": 14,
             "name": "Does not using valid credentials",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:21"
+              "location": "features\\support\\steps\\steps.pages.js:22"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -1680,7 +1779,7 @@
             "line": 15,
             "name": "Given the required payload",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:17"
+              "location": "features\\support\\steps\\steps.pages.js:18"
             },
             "result": {
               "status": "passed",
@@ -1693,11 +1792,11 @@
             "line": 17,
             "name": "Executing POST request to wp/v2/pages page endpoint",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:25"
+              "location": "features\\support\\steps\\steps.pages.js:26"
             },
             "result": {
               "status": "passed",
-              "duration": 62000000
+              "duration": 39000000
             }
           },
           {
@@ -1706,11 +1805,11 @@
             "line": 18,
             "name": "the status code should be 401 Unauthorized",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:56"
+              "location": "features\\support\\steps\\steps.pages.js:59"
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 1000000
             }
           },
           {
@@ -1718,7 +1817,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 143000000
+              "duration": 207000000
             }
           }
         ],
@@ -1740,7 +1839,7 @@
       },
       {
         "description": "",
-        "id": "pages;verify-that-a-non-authorized-user-cannot-update-a-page",
+        "id": "pages-negative-testing;verify-that-a-non-authorized-user-cannot-update-a-page",
         "keyword": "Scenario",
         "line": 21,
         "name": "Verify that a non authorized user cannot update a page",
@@ -1750,7 +1849,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 77000000
+              "duration": 75000000
             }
           },
           {
@@ -1759,11 +1858,11 @@
             "line": 22,
             "name": "Does not using valid credentials",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:21"
+              "location": "features\\support\\steps\\steps.pages.js:22"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -1772,11 +1871,11 @@
             "line": 23,
             "name": "Executing DELETE request to wp/v2/pages/{id} page endpoint",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:25"
+              "location": "features\\support\\steps\\steps.pages.js:26"
             },
             "result": {
               "status": "passed",
-              "duration": 69000000
+              "duration": 52000000
             }
           },
           {
@@ -1785,7 +1884,7 @@
             "line": 24,
             "name": "The page has been deleted",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:66"
+              "location": "features\\support\\steps\\steps.pages.js:67"
             },
             "result": {
               "status": "passed",
@@ -1798,11 +1897,11 @@
             "line": 25,
             "name": "the status code should be 401 Unauthorized",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:56"
+              "location": "features\\support\\steps\\steps.pages.js:59"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -1810,7 +1909,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 249000000
+              "duration": 144000000
             }
           }
         ],
@@ -1832,7 +1931,7 @@
       },
       {
         "description": "",
-        "id": "pages;a-user-should-be-able-to-retrieve-the-collection-of-all-pages",
+        "id": "pages-negative-testing;a-user-should-be-able-to-retrieve-the-collection-of-all-pages",
         "keyword": "Scenario",
         "line": 28,
         "name": "A user should be able to retrieve the collection of all pages",
@@ -1843,7 +1942,7 @@
             "line": 29,
             "name": "Does not using valid credentials",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:21"
+              "location": "features\\support\\steps\\steps.pages.js:22"
             },
             "result": {
               "status": "passed",
@@ -1856,11 +1955,11 @@
             "line": 30,
             "name": "Executing GET request to wp/v2/pages page endpoint",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:25"
+              "location": "features\\support\\steps\\steps.pages.js:26"
             },
             "result": {
               "status": "passed",
-              "duration": 69000000
+              "duration": 48000000
             }
           },
           {
@@ -1869,12 +1968,12 @@
             "line": 31,
             "name": "the status code should be 401 Unauthorized",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:56"
+              "location": "features\\support\\steps\\steps.pages.js:59"
             },
             "result": {
               "status": "failed",
-              "duration": 2000000,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -200\n    +401\n\n    at World.<anonymous> (C:\\Cucumber\\WordPress-Sandwichito\\features\\support\\steps\\/steps.pages.js:61:37)"
+              "duration": 1000000,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -200\n    +401\n\n    at World.<anonymous> (C:\\Cucumber\\WordPress-Sandwichito\\features\\support\\steps\\/steps.pages.js:62:37)"
             }
           }
         ],
@@ -1896,7 +1995,7 @@
       },
       {
         "description": "",
-        "id": "pages;a-user-should-be-able-to-retrieve-the-collection-of-an-specific-page",
+        "id": "pages-negative-testing;a-user-should-be-able-to-retrieve-the-collection-of-an-specific-page",
         "keyword": "Scenario",
         "line": 34,
         "name": "A user should be able to retrieve the collection of an specific page",
@@ -1906,7 +2005,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 101000000
+              "duration": 86000000
             }
           },
           {
@@ -1915,11 +2014,11 @@
             "line": 35,
             "name": "Does not using valid credentials",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:21"
+              "location": "features\\support\\steps\\steps.pages.js:22"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -1928,11 +2027,11 @@
             "line": 36,
             "name": "Executing GET request to wp/v2/pages/{id} page endpoint",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:25"
+              "location": "features\\support\\steps\\steps.pages.js:26"
             },
             "result": {
               "status": "passed",
-              "duration": 58000000
+              "duration": 39000000
             }
           },
           {
@@ -1941,11 +2040,11 @@
             "line": 37,
             "name": "the status code should be 401 Unauthorized",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:56"
+              "location": "features\\support\\steps\\steps.pages.js:59"
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 1000000
             }
           },
           {
@@ -1953,7 +2052,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 251000000
+              "duration": 152000000
             }
           }
         ],
@@ -1975,7 +2074,7 @@
       },
       {
         "description": "",
-        "id": "pages;verify-that-a-page-title-cannot-be-updated-with-an-integer-value",
+        "id": "pages-negative-testing;verify-that-a-page-title-cannot-be-updated-with-an-integer-value",
         "keyword": "Scenario",
         "line": 40,
         "name": "Verify that a page title cannot be updated with an integer value",
@@ -1985,7 +2084,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 101000000
+              "duration": 85000000
             }
           },
           {
@@ -1994,7 +2093,7 @@
             "line": 41,
             "name": "Given valid credentials",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:13"
+              "location": "features\\support\\steps\\steps.pages.js:14"
             },
             "result": {
               "status": "passed",
@@ -2018,7 +2117,7 @@
             "line": 42,
             "name": "Given the required payload",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:17"
+              "location": "features\\support\\steps\\steps.pages.js:18"
             },
             "result": {
               "status": "passed",
@@ -2031,11 +2130,11 @@
             "line": 44,
             "name": "Executing POST request to wp/v2/pages/{id} page endpoint",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:25"
+              "location": "features\\support\\steps\\steps.pages.js:26"
             },
             "result": {
               "status": "passed",
-              "duration": 148000000
+              "duration": 90000000
             }
           },
           {
@@ -2044,12 +2143,12 @@
             "line": 45,
             "name": "the status code should be 400 Bad Request",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:56"
+              "location": "features\\support\\steps\\steps.pages.js:59"
             },
             "result": {
               "status": "failed",
-              "duration": 2000000,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -200\n    +400\n\n    at World.<anonymous> (C:\\Cucumber\\WordPress-Sandwichito\\features\\support\\steps\\/steps.pages.js:61:37)"
+              "duration": 1000000,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -200\n    +400\n\n    at World.<anonymous> (C:\\Cucumber\\WordPress-Sandwichito\\features\\support\\steps\\/steps.pages.js:62:37)"
             }
           },
           {
@@ -2057,7 +2156,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 273000000
+              "duration": 126000000
             }
           }
         ],
@@ -2079,7 +2178,7 @@
       },
       {
         "description": "",
-        "id": "pages;verify-that-a-page-cannot-be-cerated-with-empty-values",
+        "id": "pages-negative-testing;verify-that-a-page-cannot-be-cerated-with-empty-values",
         "keyword": "Scenario",
         "line": 48,
         "name": "Verify that a page cannot be cerated with empty values",
@@ -2089,7 +2188,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 86000000
+              "duration": 82000000
             }
           },
           {
@@ -2098,7 +2197,7 @@
             "line": 49,
             "name": "Given valid credentials",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:13"
+              "location": "features\\support\\steps\\steps.pages.js:14"
             },
             "result": {
               "status": "passed",
@@ -2122,7 +2221,7 @@
             "line": 50,
             "name": "Given the required payload",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:17"
+              "location": "features\\support\\steps\\steps.pages.js:18"
             },
             "result": {
               "status": "passed",
@@ -2135,11 +2234,11 @@
             "line": 52,
             "name": "Executing POST request to wp/v2/pages page endpoint",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:25"
+              "location": "features\\support\\steps\\steps.pages.js:26"
             },
             "result": {
               "status": "passed",
-              "duration": 96000000
+              "duration": 67000000
             }
           },
           {
@@ -2148,12 +2247,12 @@
             "line": 53,
             "name": "the status code should be 400 Bad Request",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:56"
+              "location": "features\\support\\steps\\steps.pages.js:59"
             },
             "result": {
               "status": "failed",
-              "duration": 2000000,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -201\n    +400\n\n    at World.<anonymous> (C:\\Cucumber\\WordPress-Sandwichito\\features\\support\\steps\\/steps.pages.js:61:37)"
+              "duration": 1000000,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -201\n    +400\n\n    at World.<anonymous> (C:\\Cucumber\\WordPress-Sandwichito\\features\\support\\steps\\/steps.pages.js:62:37)"
             }
           },
           {
@@ -2161,7 +2260,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 196000000
+              "duration": 286000000
             }
           }
         ],
@@ -2183,7 +2282,7 @@
       },
       {
         "description": "",
-        "id": "pages;verify-i-cannot-get-information-from-a-page-when-i-send-a-password-with-empty-value",
+        "id": "pages-negative-testing;verify-i-cannot-get-information-from-a-page-when-i-send-a-password-with-empty-value",
         "keyword": "Scenario",
         "line": 56,
         "name": "Verify i cannot get information from a page when I send a password with empty value",
@@ -2193,7 +2292,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 100000000
+              "duration": 112000000
             }
           },
           {
@@ -2202,11 +2301,11 @@
             "line": 57,
             "name": "Given valid credentials",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:13"
+              "location": "features\\support\\steps\\steps.pages.js:14"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -2226,11 +2325,11 @@
             "line": 58,
             "name": "Given the required payload",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:17"
+              "location": "features\\support\\steps\\steps.pages.js:18"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -2239,11 +2338,11 @@
             "line": 60,
             "name": "Executing GET request to wp/v2/pages/{id} page endpoint",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:25"
+              "location": "features\\support\\steps\\steps.pages.js:26"
             },
             "result": {
               "status": "passed",
-              "duration": 74000000
+              "duration": 63000000
             }
           },
           {
@@ -2252,12 +2351,12 @@
             "line": 61,
             "name": "the status code should be 403 Forbidden",
             "match": {
-              "location": "features\\support\\steps\\steps.pages.js:56"
+              "location": "features\\support\\steps\\steps.pages.js:59"
             },
             "result": {
               "status": "failed",
-              "duration": 3000000,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -200\n    +403\n\n    at World.<anonymous> (C:\\Cucumber\\WordPress-Sandwichito\\features\\support\\steps\\/steps.pages.js:61:37)"
+              "duration": 1000000,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -200\n    +403\n\n    at World.<anonymous> (C:\\Cucumber\\WordPress-Sandwichito\\features\\support\\steps\\/steps.pages.js:62:37)"
             }
           },
           {
@@ -2265,7 +2364,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 148000000
+              "duration": 139000000
             }
           }
         ],
@@ -2286,10 +2385,10 @@
         "type": "scenario"
       }
     ],
-    "id": "pages",
+    "id": "pages-negative-testing",
     "line": 2,
     "keyword": "Feature",
-    "name": "Pages",
+    "name": "Pages Negative Testing",
     "tags": [
       {
         "name": "@Pages",
@@ -2303,7 +2402,7 @@
     "elements": [
       {
         "description": "",
-        "id": "crud-post;create-with-all-required-fields-is-succeful",
+        "id": "post-crud;create-with-all-required-fields-is-succeful",
         "keyword": "Scenario",
         "line": 4,
         "name": "CREATE WITH ALL REQUIRED FIELDS IS SUCCEFUL",
@@ -2325,11 +2424,11 @@
             "line": 6,
             "name": "User wants to create a post with the following attributes",
             "match": {
-              "location": "features\\support\\steps\\steps.post.crud.js:13"
+              "location": "features\\support\\steps\\steps.post.crud.js:15"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -2338,11 +2437,11 @@
             "line": 8,
             "name": "User save the new post a POST request to wp/v2/posts endpoint",
             "match": {
-              "location": "features\\support\\steps\\steps.post.crud.js:18"
+              "location": "features\\support\\steps\\steps.post.crud.js:20"
             },
             "result": {
               "status": "passed",
-              "duration": 133000000
+              "duration": 122000000
             }
           },
           {
@@ -2351,7 +2450,7 @@
             "line": 9,
             "name": "The save Created with code 201",
             "match": {
-              "location": "features\\support\\steps\\steps.post.crud.js:29"
+              "location": "features\\support\\steps\\steps.post.crud.js:31"
             },
             "result": {
               "status": "passed",
@@ -2373,7 +2472,7 @@
       },
       {
         "description": "",
-        "id": "crud-post;the-endpoint-should-be-able-to-retrieve-the-collection-of-all-posts",
+        "id": "post-crud;the-endpoint-should-be-able-to-retrieve-the-collection-of-all-posts",
         "keyword": "Scenario",
         "line": 12,
         "name": "The endpoint should be able to retrieve the collection of all posts",
@@ -2383,7 +2482,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 140000000
+              "duration": 115000000
             }
           },
           {
@@ -2392,11 +2491,11 @@
             "line": 13,
             "name": "User with valid credentials",
             "match": {
-              "location": "features\\support\\steps\\steps.post.crud.js:36"
+              "location": "features\\support\\steps\\steps.post.crud.js:38"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -2405,11 +2504,11 @@
             "line": 14,
             "name": "Executes a GET request to wp/v2/posts endpoint",
             "match": {
-              "location": "features\\support\\steps\\steps.post.crud.js:40"
+              "location": "features\\support\\steps\\steps.post.crud.js:42"
             },
             "result": {
               "status": "passed",
-              "duration": 64000000
+              "duration": 56000000
             }
           },
           {
@@ -2418,7 +2517,7 @@
             "line": 15,
             "name": "The post status code should be 200 OK",
             "match": {
-              "location": "features\\support\\steps\\steps.post.crud.js:52"
+              "location": "features\\support\\steps\\steps.post.crud.js:54"
             },
             "result": {
               "status": "passed",
@@ -2430,7 +2529,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 370000000
+              "duration": 238000000
             }
           }
         ],
@@ -2448,7 +2547,7 @@
       },
       {
         "description": "",
-        "id": "crud-post;the-endpoint-should-be-able-to-retrieve-the-collection-of-all-posts-by-id-post",
+        "id": "post-crud;the-endpoint-should-be-able-to-retrieve-the-collection-of-all-posts-by-id-post",
         "keyword": "Scenario",
         "line": 18,
         "name": "The endpoint should be able to retrieve the collection of all posts by id post",
@@ -2458,21 +2557,17 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 124000000
+              "duration": 108000000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 19,
-            "name": "A Valid credentials.",
-            "match": {
-              "location": "features\\support\\steps\\steps.post.negative.js:33"
-            },
+            "name": "A Valid credential to retrieve",
             "result": {
-              "status": "failed",
-              "duration": 1000000,
-              "error_message": "TypeError: dataTable.rowsHash is not a function\n    at World.<anonymous> (C:\\Cucumber\\WordPress-Sandwichito\\features\\support\\steps\\/steps.post.negative.js:34:57)"
+              "status": "undefined",
+              "duration": 0
             }
           },
           {
@@ -2481,7 +2576,7 @@
             "line": 20,
             "name": "Executes a GET request to wp/v2/posts/{id} endpoint",
             "match": {
-              "location": "features\\support\\steps\\steps.post.crud.js:40"
+              "location": "features\\support\\steps\\steps.post.crud.js:42"
             },
             "result": {
               "status": "skipped",
@@ -2494,7 +2589,7 @@
             "line": 21,
             "name": "The post status code should be 200 OK",
             "match": {
-              "location": "features\\support\\steps\\steps.post.crud.js:52"
+              "location": "features\\support\\steps\\steps.post.crud.js:54"
             },
             "result": {
               "status": "skipped",
@@ -2506,7 +2601,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 499000000
+              "duration": 443000000
             }
           }
         ],
@@ -2524,7 +2619,7 @@
       },
       {
         "description": "",
-        "id": "crud-post;update-with-all-required-fields-is-succeful",
+        "id": "post-crud;update-with-all-required-fields-is-succeful",
         "keyword": "Scenario",
         "line": 24,
         "name": "UPDATE WITH ALL REQUIRED FIELDS IS SUCCEFUL",
@@ -2534,7 +2629,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 118000000
+              "duration": 108000000
             }
           },
           {
@@ -2554,7 +2649,7 @@
             "line": 26,
             "name": "User wants to update a post with the required attributes",
             "match": {
-              "location": "features\\support\\steps\\steps.post.crud.js:59"
+              "location": "features\\support\\steps\\steps.post.crud.js:61"
             },
             "result": {
               "status": "passed",
@@ -2567,11 +2662,11 @@
             "line": 28,
             "name": "User update the post a POST request to wp/v2/posts/{id} endpoint",
             "match": {
-              "location": "features\\support\\steps\\steps.post.crud.js:64"
+              "location": "features\\support\\steps\\steps.post.crud.js:66"
             },
             "result": {
               "status": "passed",
-              "duration": 132000000
+              "duration": 93000000
             }
           },
           {
@@ -2580,7 +2675,7 @@
             "line": 29,
             "name": "The post will be update OK with code 200",
             "match": {
-              "location": "features\\support\\steps\\steps.post.crud.js:76"
+              "location": "features\\support\\steps\\steps.post.crud.js:78"
             },
             "result": {
               "status": "passed",
@@ -2592,7 +2687,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 579000000
+              "duration": 335000000
             }
           }
         ],
@@ -2610,7 +2705,7 @@
       },
       {
         "description": "",
-        "id": "crud-post;delete-with-all-required-fields-is-succeful",
+        "id": "post-crud;delete-with-all-required-fields-is-succeful",
         "keyword": "Scenario",
         "line": 32,
         "name": "DELETE WITH ALL REQUIRED FIELDS IS SUCCEFUL",
@@ -2620,7 +2715,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 134000000
+              "duration": 123000000
             }
           },
           {
@@ -2640,7 +2735,7 @@
             "line": 34,
             "name": "User wants to delete a post with an identifier",
             "match": {
-              "location": "features\\support\\steps\\steps.post.crud.js:83"
+              "location": "features\\support\\steps\\steps.post.crud.js:85"
             },
             "result": {
               "status": "passed",
@@ -2653,11 +2748,11 @@
             "line": 36,
             "name": "User delete the post a DELETE request to wp/v2/posts/{id} endpoint",
             "match": {
-              "location": "features\\support\\steps\\steps.post.crud.js:87"
+              "location": "features\\support\\steps\\steps.post.crud.js:89"
             },
             "result": {
               "status": "passed",
-              "duration": 256000000
+              "duration": 307000000
             }
           },
           {
@@ -2665,8 +2760,11 @@
             "keyword": "Then ",
             "line": 37,
             "name": "The post will be delete OK with code 200",
+            "match": {
+              "location": "features\\support\\steps\\steps.post.crud.js:101"
+            },
             "result": {
-              "status": "undefined",
+              "status": "passed",
               "duration": 0
             }
           }
@@ -2684,10 +2782,10 @@
         "type": "scenario"
       }
     ],
-    "id": "crud-post",
+    "id": "post-crud",
     "line": 1,
     "keyword": "Feature",
-    "name": "Crud post",
+    "name": "Post CRUD",
     "tags": [],
     "uri": "features\\post.feature"
   },
@@ -2696,7 +2794,7 @@
     "elements": [
       {
         "description": "",
-        "id": "negative-test;the-endpoint-shouldn't-be-able-to-create-a-new-post",
+        "id": "post-negative-test;the-endpoint-shouldn't-be-able-to-create-a-new-post",
         "keyword": "Scenario",
         "line": 4,
         "name": "The endpoint shouldn't be able to create a new post",
@@ -2718,7 +2816,7 @@
             "line": 5,
             "name": "A invalid credentials",
             "match": {
-              "location": "features\\support\\steps\\steps.post.negative.js:12"
+              "location": "features\\support\\steps\\steps.post.negative.js:13"
             },
             "result": {
               "status": "passed",
@@ -2731,11 +2829,11 @@
             "line": 7,
             "name": "Executes a POST request to wp/v2/posts endpoint.",
             "match": {
-              "location": "features\\support\\steps\\steps.post.negative.js:17"
+              "location": "features\\support\\steps\\steps.post.negative.js:18"
             },
             "result": {
               "status": "passed",
-              "duration": 68000000
+              "duration": 63000000
             }
           },
           {
@@ -2744,7 +2842,7 @@
             "line": 8,
             "name": "The status response code should be 401 with status text Unauthorized",
             "match": {
-              "location": "features\\support\\steps\\steps.post.negative.js:28"
+              "location": "features\\support\\steps\\steps.post.negative.js:40"
             },
             "result": {
               "status": "passed",
@@ -2766,7 +2864,7 @@
       },
       {
         "description": "",
-        "id": "negative-test;the-endpoint-shouldn't-be-able-delete-a-invalid-post-id",
+        "id": "post-negative-test;the-endpoint-shouldn't-be-able-delete-a-invalid-post-id",
         "keyword": "Scenario",
         "line": 11,
         "name": "The endpoint shouldn't be able delete a invalid post Id",
@@ -2787,11 +2885,8 @@
             "keyword": "Given ",
             "line": 12,
             "name": "A Valid credentials.",
-            "match": {
-              "location": "features\\support\\steps\\steps.post.negative.js:33"
-            },
             "result": {
-              "status": "passed",
+              "status": "undefined",
               "duration": 0
             }
           },
@@ -2801,11 +2896,11 @@
             "line": 14,
             "name": "Executes a POST request to wp/v2/posts/{id} endpoint.",
             "match": {
-              "location": "features\\support\\steps\\steps.post.negative.js:17"
+              "location": "features\\support\\steps\\steps.post.negative.js:18"
             },
             "result": {
-              "status": "passed",
-              "duration": 88000000
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -2814,11 +2909,11 @@
             "line": 15,
             "name": "The status response code should be 404 with status text Not Found",
             "match": {
-              "location": "features\\support\\steps\\steps.post.negative.js:28"
+              "location": "features\\support\\steps\\steps.post.negative.js:40"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "skipped",
+              "duration": 0
             }
           }
         ],
@@ -2836,7 +2931,7 @@
       },
       {
         "description": "",
-        "id": "negative-test;the-endpoint-shouldn't-be-able-created-a-new-post-with-invalid-parameters",
+        "id": "post-negative-test;the-endpoint-shouldn't-be-able-created-a-new-post-with-invalid-parameters",
         "keyword": "Scenario",
         "line": 18,
         "name": "The endpoint shouldn't be able created a new post with invalid parameters",
@@ -2857,12 +2952,9 @@
             "keyword": "Given ",
             "line": 19,
             "name": "A Valid credentials.",
-            "match": {
-              "location": "features\\support\\steps\\steps.post.negative.js:33"
-            },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "undefined",
+              "duration": 0
             }
           },
           {
@@ -2871,11 +2963,11 @@
             "line": 21,
             "name": "Executes a POST request to wp/v2/posts endpoint.",
             "match": {
-              "location": "features\\support\\steps\\steps.post.negative.js:17"
+              "location": "features\\support\\steps\\steps.post.negative.js:18"
             },
             "result": {
-              "status": "passed",
-              "duration": 53000000
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -2884,11 +2976,11 @@
             "line": 22,
             "name": "The status response code should be 400 with status text Bad Request",
             "match": {
-              "location": "features\\support\\steps\\steps.post.negative.js:28"
+              "location": "features\\support\\steps\\steps.post.negative.js:40"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "skipped",
+              "duration": 0
             }
           }
         ],
@@ -2905,10 +2997,10 @@
         "type": "scenario"
       }
     ],
-    "id": "negative-test",
+    "id": "post-negative-test",
     "line": 1,
     "keyword": "Feature",
-    "name": "Negative test",
+    "name": "Post Negative test",
     "tags": [],
     "uri": "features\\post.negative.feature"
   },
@@ -2917,7 +3009,7 @@
     "elements": [
       {
         "description": "",
-        "id": "users;a-user-should-be-able-to-retrieve-the-collection-of-all-users",
+        "id": "users-crud;a-user-should-be-able-to-retrieve-the-collection-of-all-users",
         "keyword": "Scenario",
         "line": 5,
         "name": "A user should be able to retrieve the collection of all users",
@@ -2932,7 +3024,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -2945,7 +3037,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 82000000
+              "duration": 81000000
             }
           },
           {
@@ -2958,7 +3050,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ],
@@ -2980,7 +3072,7 @@
       },
       {
         "description": "",
-        "id": "users;a-user-should-be-able-to-create-a-new-user",
+        "id": "users-crud;a-user-should-be-able-to-create-a-new-user",
         "keyword": "Scenario",
         "line": 11,
         "name": "A user should be able to create a new user",
@@ -3032,7 +3124,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 83000000
+              "duration": 70000000
             }
           },
           {
@@ -3089,7 +3181,7 @@
       },
       {
         "description": "",
-        "id": "users;a-user-should-be-able-to-retrieve-a-user-info",
+        "id": "users-crud;a-user-should-be-able-to-retrieve-a-user-info",
         "keyword": "Scenario",
         "line": 20,
         "name": "A user should be able to retrieve a user info",
@@ -3099,7 +3191,7 @@
             "hidden": true,
             "result": {
               "status": "failed",
-              "duration": 147000000,
+              "duration": 75000000,
               "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
             }
           },
@@ -3169,7 +3261,7 @@
       },
       {
         "description": "",
-        "id": "users;a-user-should-be-able-to-update-a-user",
+        "id": "users-crud;a-user-should-be-able-to-update-a-user",
         "keyword": "Scenario",
         "line": 26,
         "name": "A user should be able to update a user",
@@ -3179,7 +3271,7 @@
             "hidden": true,
             "result": {
               "status": "failed",
-              "duration": 239000000,
+              "duration": 81000000,
               "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
             }
           },
@@ -3264,7 +3356,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ],
@@ -3286,7 +3378,7 @@
       },
       {
         "description": "",
-        "id": "users;a-user-should-be-able-to-delete-a-user",
+        "id": "users-crud;a-user-should-be-able-to-delete-a-user",
         "keyword": "Scenario",
         "line": 35,
         "name": "A user should be able to delete a user",
@@ -3296,7 +3388,7 @@
             "hidden": true,
             "result": {
               "status": "failed",
-              "duration": 178000000,
+              "duration": 86000000,
               "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
             }
           },
@@ -3394,10 +3486,10 @@
         "type": "scenario"
       }
     ],
-    "id": "users",
+    "id": "users-crud",
     "line": 2,
     "keyword": "Feature",
-    "name": "Users",
+    "name": "Users CRUD",
     "tags": [
       {
         "name": "@Users",
@@ -3411,7 +3503,7 @@
     "elements": [
       {
         "description": "",
-        "id": "users;a-user-should-not-be-able-to-retrieve-the-collection-of-all-users",
+        "id": "users-negative-testing;a-user-should-not-be-able-to-retrieve-the-collection-of-all-users",
         "keyword": "Scenario",
         "line": 5,
         "name": "A user should not be able to retrieve the collection of all users",
@@ -3439,7 +3531,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 100000000
+              "duration": 120000000
             }
           },
           {
@@ -3475,7 +3567,7 @@
       },
       {
         "description": "",
-        "id": "users;a-user-should-not-be-able-to-create-a-new-user",
+        "id": "users-negative-testing;a-user-should-not-be-able-to-create-a-new-user",
         "keyword": "Scenario",
         "line": 11,
         "name": "A user should not be able to create a new user",
@@ -3490,7 +3582,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -3514,7 +3606,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -3527,7 +3619,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 98000000
+              "duration": 68000000
             }
           },
           {
@@ -3539,9 +3631,8 @@
               "location": "features\\support\\steps\\steps.js:52"
             },
             "result": {
-              "status": "failed",
-              "duration": 1000000,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -400\n    +401\n\n    at World.<anonymous> (C:\\Cucumber\\WordPress-Sandwichito\\features\\support\\steps\\/steps.js:54:43)"
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -3549,7 +3640,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 0
             }
           }
         ],
@@ -3571,7 +3662,7 @@
       },
       {
         "description": "",
-        "id": "users;a-user-should-not-be-able-to-create-a-new-user",
+        "id": "users-negative-testing;a-user-should-not-be-able-to-create-a-new-user",
         "keyword": "Scenario",
         "line": 19,
         "name": "A user should not be able to create a new user",
@@ -3612,7 +3703,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 172000000
+              "duration": 77000000
             }
           },
           {
@@ -3668,7 +3759,7 @@
       },
       {
         "description": "",
-        "id": "users;a-user-should-not-be-able-to-create-a-new-user",
+        "id": "users-negative-testing;a-user-should-not-be-able-to-create-a-new-user",
         "keyword": "Scenario",
         "line": 19,
         "name": "A user should not be able to create a new user",
@@ -3709,7 +3800,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 116000000
+              "duration": 62000000
             }
           },
           {
@@ -3722,7 +3813,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -3765,7 +3856,7 @@
       },
       {
         "description": "",
-        "id": "users;a-user-should-not-be-able-to-create-a-new-user",
+        "id": "users-negative-testing;a-user-should-not-be-able-to-create-a-new-user",
         "keyword": "Scenario",
         "line": 19,
         "name": "A user should not be able to create a new user",
@@ -3806,7 +3897,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 103000000
+              "duration": 54000000
             }
           },
           {
@@ -3862,7 +3953,7 @@
       },
       {
         "description": "",
-        "id": "users;a-user-should-not-be-able-to-create-a-new-user",
+        "id": "users-negative-testing;a-user-should-not-be-able-to-create-a-new-user",
         "keyword": "Scenario",
         "line": 19,
         "name": "A user should not be able to create a new user",
@@ -3877,7 +3968,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -3890,7 +3981,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -3903,7 +3994,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 133000000
+              "duration": 39000000
             }
           },
           {
@@ -3928,9 +4019,8 @@
               "location": "features\\support\\steps\\steps.js:63"
             },
             "result": {
-              "status": "failed",
-              "duration": 5000000,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -rest_missing_callback_param\n    +rest_invalid_param\n\n    at World.<anonymous> (C:\\Cucumber\\WordPress-Sandwichito\\features\\support\\steps\\/steps.js:64:42)"
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -3938,7 +4028,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ],
@@ -3960,7 +4050,7 @@
       },
       {
         "description": "",
-        "id": "users;a-user-should-not-be-able-to-create-a-new-user",
+        "id": "users-negative-testing;a-user-should-not-be-able-to-create-a-new-user",
         "keyword": "Scenario",
         "line": 19,
         "name": "A user should not be able to create a new user",
@@ -3988,7 +4078,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -4001,7 +4091,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 88000000
+              "duration": 54000000
             }
           },
           {
@@ -4026,9 +4116,8 @@
               "location": "features\\support\\steps\\steps.js:63"
             },
             "result": {
-              "status": "failed",
-              "duration": 2000000,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -rest_missing_callback_param\n    +rest_invalid_param\n\n    at World.<anonymous> (C:\\Cucumber\\WordPress-Sandwichito\\features\\support\\steps\\/steps.js:64:42)"
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -4036,7 +4125,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ],
@@ -4058,7 +4147,7 @@
       },
       {
         "description": "",
-        "id": "users;a-user-should-not-be-able-to-create-a-new-user",
+        "id": "users-negative-testing;a-user-should-not-be-able-to-create-a-new-user",
         "keyword": "Scenario",
         "line": 19,
         "name": "A user should not be able to create a new user",
@@ -4086,7 +4175,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -4099,7 +4188,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 101000000
+              "duration": 50000000
             }
           },
           {
@@ -4112,7 +4201,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -4124,9 +4213,8 @@
               "location": "features\\support\\steps\\steps.js:63"
             },
             "result": {
-              "status": "failed",
-              "duration": 2000000,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -rest_missing_callback_param\n    +rest_invalid_param\n\n    at World.<anonymous> (C:\\Cucumber\\WordPress-Sandwichito\\features\\support\\steps\\/steps.js:64:42)"
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -4156,7 +4244,7 @@
       },
       {
         "description": "",
-        "id": "users;a-user-should-not-be-able-to-create-a-new-user",
+        "id": "users-negative-testing;a-user-should-not-be-able-to-create-a-new-user",
         "keyword": "Scenario",
         "line": 19,
         "name": "A user should not be able to create a new user",
@@ -4184,7 +4272,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -4197,7 +4285,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 89000000
+              "duration": 46000000
             }
           },
           {
@@ -4222,9 +4310,8 @@
               "location": "features\\support\\steps\\steps.js:63"
             },
             "result": {
-              "status": "failed",
-              "duration": 2000000,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -rest_missing_callback_param\n    +rest_invalid_param\n\n    at World.<anonymous> (C:\\Cucumber\\WordPress-Sandwichito\\features\\support\\steps\\/steps.js:64:42)"
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -4232,7 +4319,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ],
@@ -4254,7 +4341,7 @@
       },
       {
         "description": "",
-        "id": "users;a-user-should-not-be-able-to-create-a-new-user",
+        "id": "users-negative-testing;a-user-should-not-be-able-to-create-a-new-user",
         "keyword": "Scenario",
         "line": 19,
         "name": "A user should not be able to create a new user",
@@ -4295,7 +4382,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 85000000
+              "duration": 55000000
             }
           },
           {
@@ -4320,9 +4407,8 @@
               "location": "features\\support\\steps\\steps.js:63"
             },
             "result": {
-              "status": "failed",
-              "duration": 1000000,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -rest_missing_callback_param\n    +rest_invalid_param\n\n    at World.<anonymous> (C:\\Cucumber\\WordPress-Sandwichito\\features\\support\\steps\\/steps.js:64:42)"
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -4352,7 +4438,7 @@
       },
       {
         "description": "",
-        "id": "users;a-user-should-not-be-able-to-create-a-new-user",
+        "id": "users-negative-testing;a-user-should-not-be-able-to-create-a-new-user",
         "keyword": "Scenario",
         "line": 19,
         "name": "A user should not be able to create a new user",
@@ -4380,7 +4466,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -4393,7 +4479,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 99000000
+              "duration": 64000000
             }
           },
           {
@@ -4405,8 +4491,9 @@
               "location": "features\\support\\steps\\steps.js:52"
             },
             "result": {
-              "status": "passed",
-              "duration": 0
+              "status": "failed",
+              "duration": 1000000,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -500\n    +400\n\n    at World.<anonymous> (C:\\Cucumber\\WordPress-Sandwichito\\features\\support\\steps\\/steps.js:54:43)"
             }
           },
           {
@@ -4418,9 +4505,8 @@
               "location": "features\\support\\steps\\steps.js:63"
             },
             "result": {
-              "status": "failed",
-              "duration": 1000000,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -rest_missing_callback_param\n    +rest_invalid_param\n\n    at World.<anonymous> (C:\\Cucumber\\WordPress-Sandwichito\\features\\support\\steps\\/steps.js:64:42)"
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -4428,7 +4514,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ],
@@ -4450,7 +4536,7 @@
       },
       {
         "description": "",
-        "id": "users;a-user-should-not-be-able-to-retrieve-a-user",
+        "id": "users-negative-testing;a-user-should-not-be-able-to-retrieve-a-user",
         "keyword": "Scenario",
         "line": 38,
         "name": "A user should not be able to retrieve a user",
@@ -4460,7 +4546,7 @@
             "hidden": true,
             "result": {
               "status": "failed",
-              "duration": 169000000,
+              "duration": 53000000,
               "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
             }
           },
@@ -4508,7 +4594,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ],
@@ -4530,7 +4616,7 @@
       },
       {
         "description": "",
-        "id": "users;a-user-should-not-be-able-to-retrieve-the-admin-user",
+        "id": "users-negative-testing;a-user-should-not-be-able-to-retrieve-the-admin-user",
         "keyword": "Scenario",
         "line": 44,
         "name": "A user should not be able to retrieve the admin user",
@@ -4545,7 +4631,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -4558,7 +4644,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 72000000
+              "duration": 58000000
             }
           },
           {
@@ -4594,7 +4680,7 @@
       },
       {
         "description": "",
-        "id": "users;a-user-should-not-be-able-to-update-a-user-info",
+        "id": "users-negative-testing;a-user-should-not-be-able-to-update-a-user-info",
         "keyword": "Scenario",
         "line": 50,
         "name": "A user should not be able to update a user info",
@@ -4604,7 +4690,7 @@
             "hidden": true,
             "result": {
               "status": "failed",
-              "duration": 169000000,
+              "duration": 51000000,
               "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
             }
           },
@@ -4698,7 +4784,7 @@
       },
       {
         "description": "",
-        "id": "users;a-user-should-not-be-able-to-update-a-user",
+        "id": "users-negative-testing;a-user-should-not-be-able-to-update-a-user",
         "keyword": "Scenario",
         "line": 58,
         "name": "A user should not be able to update a user",
@@ -4708,7 +4794,7 @@
             "hidden": true,
             "result": {
               "status": "failed",
-              "duration": 261000000,
+              "duration": 68000000,
               "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
             }
           },
@@ -4730,6 +4816,99 @@
             "keyword": "And ",
             "line": 60,
             "name": "I have a invalid payload: Invalid.POST.Update-Invalid-Email",
+            "match": {
+              "location": "features\\support\\steps\\steps.js:26"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 61,
+            "name": "I execute a POST request to wp/v2/users/{id} endpoint",
+            "match": {
+              "location": "features\\support\\steps\\steps.js:30"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 62,
+            "name": "The error status code should be 400 Bad Request",
+            "match": {
+              "location": "features\\support\\steps\\steps.js:52"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Users",
+            "line": 1
+          },
+          {
+            "name": "@UsersNegative",
+            "line": 57
+          },
+          {
+            "name": "@UsersUpdate-N",
+            "line": 57
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "users-negative-testing;a-user-should-not-be-able-to-update-a-user",
+        "keyword": "Scenario",
+        "line": 58,
+        "name": "A user should not be able to update a user",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 70000000,
+              "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 59,
+            "name": "I have valid credentials",
+            "match": {
+              "location": "features\\support\\steps\\steps.js:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 60,
+            "name": "I have a invalid payload: Invalid.POST.Update-Empty-Email",
             "match": {
               "location": "features\\support\\steps\\steps.js:26"
             },
@@ -4791,7 +4970,7 @@
       },
       {
         "description": "",
-        "id": "users;a-user-should-not-be-able-to-update-a-user",
+        "id": "users-negative-testing;a-user-should-not-be-able-to-update-a-user",
         "keyword": "Scenario",
         "line": 58,
         "name": "A user should not be able to update a user",
@@ -4801,100 +4980,7 @@
             "hidden": true,
             "result": {
               "status": "failed",
-              "duration": 254000000,
-              "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 59,
-            "name": "I have valid credentials",
-            "match": {
-              "location": "features\\support\\steps\\steps.js:13"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 60,
-            "name": "I have a invalid payload: Invalid.POST.Update-Empty-Email",
-            "match": {
-              "location": "features\\support\\steps\\steps.js:26"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 61,
-            "name": "I execute a POST request to wp/v2/users/{id} endpoint",
-            "match": {
-              "location": "features\\support\\steps\\steps.js:30"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 62,
-            "name": "The error status code should be 400 Bad Request",
-            "match": {
-              "location": "features\\support\\steps\\steps.js:52"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 3000000
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Users",
-            "line": 1
-          },
-          {
-            "name": "@UsersNegative",
-            "line": 57
-          },
-          {
-            "name": "@UsersUpdate-N",
-            "line": 57
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "users;a-user-should-not-be-able-to-update-a-user",
-        "keyword": "Scenario",
-        "line": 58,
-        "name": "A user should not be able to update a user",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "failed",
-              "duration": 352000000,
+              "duration": 62000000,
               "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
             }
           },
@@ -4955,7 +5041,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 0
             }
           }
         ],
@@ -4977,7 +5063,7 @@
       },
       {
         "description": "",
-        "id": "users;a-user-should-not-be-able-to-update-a-user",
+        "id": "users-negative-testing;a-user-should-not-be-able-to-update-a-user",
         "keyword": "Scenario",
         "line": 58,
         "name": "A user should not be able to update a user",
@@ -4987,7 +5073,7 @@
             "hidden": true,
             "result": {
               "status": "failed",
-              "duration": 147000000,
+              "duration": 168000000,
               "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
             }
           },
@@ -5070,7 +5156,7 @@
       },
       {
         "description": "",
-        "id": "users;a-user-should-not-be-able-to-update-a-user",
+        "id": "users-negative-testing;a-user-should-not-be-able-to-update-a-user",
         "keyword": "Scenario",
         "line": 58,
         "name": "A user should not be able to update a user",
@@ -5080,7 +5166,7 @@
             "hidden": true,
             "result": {
               "status": "failed",
-              "duration": 156000000,
+              "duration": 76000000,
               "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
             }
           },
@@ -5141,7 +5227,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 1000000
             }
           }
         ],
@@ -5163,7 +5249,7 @@
       },
       {
         "description": "",
-        "id": "users;a-user-should-not-be-able-to-update-a-user",
+        "id": "users-negative-testing;a-user-should-not-be-able-to-update-a-user",
         "keyword": "Scenario",
         "line": 58,
         "name": "A user should not be able to update a user",
@@ -5173,7 +5259,7 @@
             "hidden": true,
             "result": {
               "status": "failed",
-              "duration": 149000000,
+              "duration": 69000000,
               "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
             }
           },
@@ -5256,7 +5342,7 @@
       },
       {
         "description": "",
-        "id": "users;a-user-should-not-be-able-to-delete-a-user",
+        "id": "users-negative-testing;a-user-should-not-be-able-to-delete-a-user",
         "keyword": "Scenario",
         "line": 73,
         "name": "A user should not be able to delete a user",
@@ -5266,7 +5352,7 @@
             "hidden": true,
             "result": {
               "status": "failed",
-              "duration": 169000000,
+              "duration": 95000000,
               "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
             }
           },
@@ -5360,7 +5446,7 @@
       },
       {
         "description": "",
-        "id": "users;a-user-should-not-be-able-to-delete-a-user",
+        "id": "users-negative-testing;a-user-should-not-be-able-to-delete-a-user",
         "keyword": "Scenario",
         "line": 81,
         "name": "A user should not be able to delete a user",
@@ -5370,7 +5456,7 @@
             "hidden": true,
             "result": {
               "status": "failed",
-              "duration": 157000000,
+              "duration": 84000000,
               "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
             }
           },
@@ -5392,6 +5478,99 @@
             "keyword": "And ",
             "line": 83,
             "name": "I have a invalid payload: Invalid.DELETE.Delete-Without-Parameters",
+            "match": {
+              "location": "features\\support\\steps\\steps.js:26"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 84,
+            "name": "I execute a POST request to wp/v2/users/{id} endpoint",
+            "match": {
+              "location": "features\\support\\steps\\steps.js:30"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 85,
+            "name": "The error status code should be 200 OK",
+            "match": {
+              "location": "features\\support\\steps\\steps.js:52"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Users",
+            "line": 1
+          },
+          {
+            "name": "@UsersNegative",
+            "line": 80
+          },
+          {
+            "name": "@UsersDelete-N",
+            "line": 80
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "users-negative-testing;a-user-should-not-be-able-to-delete-a-user",
+        "keyword": "Scenario",
+        "line": 81,
+        "name": "A user should not be able to delete a user",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 89000000,
+              "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 82,
+            "name": "I have valid credentials",
+            "match": {
+              "location": "features\\support\\steps\\steps.js:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 83,
+            "name": "I have a invalid payload: Invalid.DELETE.Delete-Without-Force",
             "match": {
               "location": "features\\support\\steps\\steps.js:26"
             },
@@ -5453,7 +5632,7 @@
       },
       {
         "description": "",
-        "id": "users;a-user-should-not-be-able-to-delete-a-user",
+        "id": "users-negative-testing;a-user-should-not-be-able-to-delete-a-user",
         "keyword": "Scenario",
         "line": 81,
         "name": "A user should not be able to delete a user",
@@ -5463,100 +5642,7 @@
             "hidden": true,
             "result": {
               "status": "failed",
-              "duration": 167000000,
-              "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 82,
-            "name": "I have valid credentials",
-            "match": {
-              "location": "features\\support\\steps\\steps.js:13"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 83,
-            "name": "I have a invalid payload: Invalid.DELETE.Delete-Without-Force",
-            "match": {
-              "location": "features\\support\\steps\\steps.js:26"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 84,
-            "name": "I execute a POST request to wp/v2/users/{id} endpoint",
-            "match": {
-              "location": "features\\support\\steps\\steps.js:30"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 85,
-            "name": "The error status code should be 200 OK",
-            "match": {
-              "location": "features\\support\\steps\\steps.js:52"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 2000000
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Users",
-            "line": 1
-          },
-          {
-            "name": "@UsersNegative",
-            "line": 80
-          },
-          {
-            "name": "@UsersDelete-N",
-            "line": 80
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "users;a-user-should-not-be-able-to-delete-a-user",
-        "keyword": "Scenario",
-        "line": 81,
-        "name": "A user should not be able to delete a user",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "failed",
-              "duration": 159000000,
+              "duration": 76000000,
               "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Cucumber\\WordPress-Sandwichito\\node_modules\\axios\\lib\\adapters\\http.js:293:11)\n    at IncomingMessage.emit (events.js:387:35)\n    at endReadableNT (internal/streams/readable.js:1317:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
             }
           },
@@ -5617,7 +5703,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ],
@@ -5638,10 +5724,10 @@
         "type": "scenario"
       }
     ],
-    "id": "users",
+    "id": "users-negative-testing",
     "line": 2,
     "keyword": "Feature",
-    "name": "Users",
+    "name": "Users Negative Testing",
     "tags": [
       {
         "name": "@Users",

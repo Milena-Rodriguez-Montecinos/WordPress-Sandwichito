@@ -3,6 +3,7 @@ import { expect } from 'chai';
 import HttpRequestManager from '../../../src/common/api/http.request.manager';
 import endpoints from '../../../src/resources/endpoints.json';
 import payloads from '../../../src/resources/payloads/payloads.post.json'
+import logger from "../../../src/logger/logger.posts";
 
 let endpoint = endpoints.postById
 let _response = ''
@@ -16,7 +17,7 @@ Before({tags: "@Posts-update or @Posts-delete or @Posts-read or @Posts-readById"
         _response = response
     })
     .catch(function(error) {
-        console.log(error)
+        logger.error(error)
         throw error
     })
 
@@ -31,7 +32,7 @@ After({tags: "@Posts-update or @Posts-read or @Posts-readById"}, async function(
         _response = response;
     })
     .catch(function (error) {
-        console.log(error)
+        logger.error(error)
         throw error
     })
 })

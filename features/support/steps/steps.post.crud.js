@@ -2,6 +2,8 @@ import { Given, When, Then } from '@cucumber/cucumber';
 import { expect } from 'chai';
 import HttpRequestManager from '../../../src/common/api/http.request.manager'
 import payloads from '../../../src/resources/payloads/payloads.post.json'
+import logger from "../../../src/logger/logger.posts";
+
 
 let validCredentials = false;
 let _response = '';
@@ -21,7 +23,7 @@ When(/^User save the new post a (.*) request to (.*) endpoint$/, async function 
         _response = response;
     })
     .catch(function (error) {
-        console.log(error)
+        logger.error(error)
         throw error
     })
 });
@@ -44,7 +46,7 @@ When(/^Executes a (.*) request to (.*) endpoint$/, async function (verb, endpoin
         _response = response;
     })
     .catch(function (error) {
-        console.log(error)
+        logger.error(error)
         throw error
     })
 })
@@ -68,7 +70,7 @@ When(/^User update the post a (.*) request to (.*) endpoint$/, async function (v
         _response = response;
     })
     .catch(function (error) {
-        console.log(error)
+        logger.error(error)
         throw error
     })
 });
@@ -91,7 +93,7 @@ When(/^User delete the post a (.*) request to (.*) endpoint$/, async function (v
         _response = response;
     })
     .catch(function (error) {
-        console.log(error)
+        logger.error(error)
         throw error
     })
 });
