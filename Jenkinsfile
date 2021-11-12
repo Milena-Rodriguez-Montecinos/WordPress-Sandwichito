@@ -1,6 +1,10 @@
 pipeline {
   agent any
-
+  environment {
+    DOCKER_HUB_USER = 'titosvir'
+    DOCKER_HUB = credentials('Docker')
+    TAG_VERSION = '1.0'
+  }
 
   stages {
     stage('Install dependencies') {
@@ -75,7 +79,7 @@ pipeline {
 
           steps {
 
-              sh 'docker build -t extractor_service:"${TAG_VERSION}" .'
+              sh 'docker build -t at14-team2:"${TAG_VERSION}" .'
           }  
     }
   }
@@ -92,11 +96,7 @@ pipeline {
       }        
   }   
 
-  environment {
-    DOCKER_HUB_USER = 'titosvir'
-    DOCKER_HUB = credentials('Docker')
-    TAG_VERSION = '1.0'
-  }
+
 
 
 }
