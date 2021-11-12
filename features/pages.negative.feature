@@ -1,5 +1,5 @@
 @Pages
-Feature: Pages
+Feature: Pages Negative Testing
 
     @NEGATIVE @UNAUTHORIZED-POST
     Scenario: Verify that a non authorized user cannot create a page

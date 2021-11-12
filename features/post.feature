@@ -1,4 +1,4 @@
-Feature: Crud post
+Feature: Post CRUD
 
 @Posts-Crud @Posts-create
 Scenario: CREATE WITH ALL REQUIRED FIELDS IS SUCCEFUL

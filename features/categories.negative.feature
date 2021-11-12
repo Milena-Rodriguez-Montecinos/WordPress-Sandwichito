@@ -1,5 +1,5 @@
 @Categories
-Feature: Categories
+Feature: Categories Negative Testing
 
 @Categories-Negative @Negative-Category-Retrieve
 Scenario: The endpoint should Verify that a non authorized user cannot be able to get the collection of all categories.
