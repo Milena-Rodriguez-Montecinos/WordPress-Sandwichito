@@ -1,12 +1,12 @@
 import { After, Before } from "@cucumber/cucumber";
 import HttpRequestManager from "../../../src/common/api/http.request.manager";
 import endpoints from '../../../src/resources/endpoints.json'
-import payloads from '../../../src/resources/payloads/payloads.user.json'
+import payloads from '../../../src/resources/payloads/payloads.categories.js'
 import { expect } from 'chai';
 
-Before({tags: "@ReadById or @Update or @Delete or @UsersReadById-N or @UsersUpdate-N or @UsersDelete-N"}, async function () {
+Before({tags: "@Category-Retrieve or @Category-Update or @Category-Delete or @Negative-Category-Retrieve or @Negative-Category-Create or @Negative-Category-Delete"}, async function () {
     let _response = ''
-    await HttpRequestManager.makeRequest('POST', endpoints.users, payloads.Valid.POST.CreateUser)
+    await HttpRequestManager.makeRequest('POST', endpoints.categories, payloads.Valid.POST.CreateCategory)
     .then(function (response) {
         expect(response.status).to.equal(201)
         expect(response.statusText).to.equal('Created')
@@ -19,18 +19,18 @@ Before({tags: "@ReadById or @Update or @Delete or @UsersReadById-N or @UsersUpda
     this.id = _response.data.id
 })
 
-After({tags: "@Create or @ReadById or @Update or @UsersCreate-N or @UsersReadById-N or @UsersUpdate-N or @UsersDelete-N"}, async function () {
+After({tags: "@Category-Create or @Category-Retrieve or @Category-Update or Negative-Category-POST or @Negative-Category-Retrieve"}, async function () {
     let _postId = this.id
     if(_postId != undefined) {
-        console.log(endpoints.usersById.replace('{id}', _postId))
-        await HttpRequestManager.makeRequest('DELETE', endpoints.usersById.replace('{id}', _postId), payloads.Valid.DELETE.DeleteUser)
+        console.log(endpoints.categoriesById.replace('{id}', _postId))
+        await HttpRequestManager.makeRequest('DELETE', endpoints.categoriesById.replace('{id}', _postId), payloads.Valid.DELETE.DeleteCategory)
         .then(function (response) {
             expect(response.status).to.equal(200)
             expect(response.statusText).to.equal('OK')
-            console.log(`User ${_postId} deleted`)
+            console.log(`Category ${_postId} deleted`)
         })
         .catch(function (error) {
             throw error
         })
-    }    
+    }   
 })

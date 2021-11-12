@@ -1,13 +1,13 @@
 {
     "AdminCredentials" : {
-        "baseURL": "http://192.168.33.30:8080",
+        "baseURL": "http://192.168.33.35:4040",
         "auth": {
-            "username": "at14",
-            "password": "cDoW49HM0DaIcXtXVw7n4OOL"
+            "username": "titosvir",
+            "password": "mcS8 eV8a axaK JOKJ oubx 3Uf1"
         }
     },
     "InvalidCredentials" : {
-        "baseURL": "http://192.168.33.30:8080",
+        "baseURL": "http://192.168.33.35:4040",
         "auth": {
             "username": "edwin_patex",
             "password": "12345aeiou"
