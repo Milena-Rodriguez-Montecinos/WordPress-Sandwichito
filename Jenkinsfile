@@ -1,11 +1,11 @@
 pipeline {
   agent any
-  stages {
-    stage('') {
-      steps {
-        sh 'echo "Hello world"'
-      }
-    }
+    stage('Install dependencies') {
+          steps {
+              nodejs('Node16.10') {
+                sh 'npm install'
+              }
 
-  }
+          }
+    }
 }
