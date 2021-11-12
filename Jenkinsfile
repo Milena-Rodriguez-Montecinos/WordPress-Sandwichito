@@ -27,6 +27,25 @@ pipeline {
                 //sh 'npm run test -- --tags "@Users"'
               }  
           }
+          post{
+            success {
+              // publish html
+              publishHTML target: [
+                  allowMissing: false,
+                  alwaysLinkToLastBuild: false,
+                  keepAll: true,
+                  reportDir: 'reports/',
+                  reportFiles: 'report.html',
+                  reportName: 'User feature'
+                ]
+              //send emails
+              /*emailext (to: 'titocaceres.carlos@gmail.com', 
+                subject: "Email Report from - '${env.JOB_NAME}' about the 'User feature'", 
+                body: readFile("EXTRACTOR_SERVICE/coverage/lcov-report/index.html"), 
+                mimeType: 'text/html');           */     
+            }
+          }
+
         }
 
         stage('Pages feature') {
@@ -35,11 +54,27 @@ pipeline {
                 sh 'npm run test -- --tags "@PAGE-CRUD"'
                 //sh 'npm run test -- --tags "@Pages"'
               }  
-          }       
-        }   
-      }        
-    }
-   
+          } 
+          post{
+            success {
+              // publish html
+              publishHTML target: [
+                  allowMissing: false,
+                  alwaysLinkToLastBuild: false,
+                  keepAll: true,
+                  reportDir: 'reports/',
+                  reportFiles: 'report.html',
+                  reportName: 'Pages feature report'
+                ]
+              /*emailext (to: 'titocaceres.carlos@gmail.com', 
+                subject: "Email Report from - '${env.JOB_NAME}' about the 'Pages feature'", 
+                body: readFile("MLendPoint/coverage/lcov-report/index.html"), 
+                mimeType: 'text/html');     */           
+            }
+          }                  
+        }     
+      }     
+    }    
 
     stage('Package-the project') {
 
