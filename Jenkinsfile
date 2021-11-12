@@ -26,7 +26,6 @@ pipeline {
       }
     }
 
-
     stage('Reports') {
         steps {
          publishHTML(allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'reports/', reportFiles: 'report.html', reportName: 'Cucumber report1')
