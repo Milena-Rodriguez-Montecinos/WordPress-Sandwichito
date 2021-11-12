@@ -58,7 +58,7 @@ pipeline {
   }
   post {
     always {
-        cucumber (buildStatus: 'UNSTABLE',
+        cucumber (
                 failedFeaturesNumber: 1,
                 failedScenariosNumber: 1,
                 skippedStepsNumber: 1,
