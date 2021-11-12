@@ -96,7 +96,7 @@ When(/^User delete the post a (.*) request to (.*) endpoint$/, async function (v
     })
 });
        
-Then(/^The post is delete (.*) with code (\d+)$/, function (statusText, statusCode) {
+Then(/^The post will be delete (.*) with code (\d+)$/, function (statusText, statusCode) {
     expect(_response.status).to.equal(statusCode)
     expect(_response.statusText).to.equal(statusText)
 });

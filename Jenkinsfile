@@ -14,41 +14,21 @@ pipeline {
 
       parallel {
 
-        stage('User feature') {
+        stage('Run all tests') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
               nodejs('Node16.4') {
-                sh 'npm run test -- --tags "@Users"'
+                sh 'npm run test'
               }
             }
-          } 
-          post {
-            always {
-              publishHTML(allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'reports/', reportFiles: 'report.html', reportName: 'Cucumber report1')
-            }
-           }               
-        }
-
-        stage('Pages feature') {
-          steps {
-            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              nodejs('Node16.4') {
-                sh 'npm run test -- --tags "@Pages"'
-              }
-            }
-          }
-          post {
-            always {
-              publishHTML(allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'reports/', reportFiles: 'report.html', reportName: 'Cucumber report2')
-            }
-           }           
+          }              
         }
       }
     }
 
-
     stage('Reports') {
         steps {
+         publishHTML(allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'reports/', reportFiles: 'report.html', reportName: 'Cucumber report1')
         cucumber (
                 reportTitle: 'My report',
                 fileIncludePattern: 'reports/report.json',
@@ -63,6 +43,7 @@ pipeline {
     DOCKER_HUB = credentials('Docker')
     TAG_VERSION = '1.0'
   }
+
   post {
 
     success {

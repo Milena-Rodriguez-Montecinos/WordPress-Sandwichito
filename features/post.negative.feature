@@ -1,4 +1,4 @@
-Feature: Negative test
+Feature: Post Negative test
 
 @Posts-Negative @Posts-Negative-Create
 Scenario: The endpoint shouldn't be able to create a new post

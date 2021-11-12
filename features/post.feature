@@ -1,4 +1,4 @@
-Feature: Crud post
+Feature: Post CRUD
 
 @Posts-Crud @Posts-create
 Scenario: CREATE WITH ALL REQUIRED FIELDS IS SUCCEFUL
@@ -16,7 +16,7 @@ Scenario: The endpoint should be able to retrieve the collection of all posts
 
 @Posts-Crud @Posts-readById
 Scenario: The endpoint should be able to retrieve the collection of all posts by id post
-    Given A Valid credentials.
+    Given A Valid credential to retrieve
     When Executes a GET request to wp/v2/posts/{id} endpoint
     Then The post status code should be 200 OK
 
