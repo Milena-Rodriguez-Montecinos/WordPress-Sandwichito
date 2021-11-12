@@ -1,0 +1,43 @@
+{
+    "Valid": {
+        "POST": {
+            "CreateCategory": {
+                "name": "name"
+            },
+            "UpdateCategory": {
+                "id": "7"
+            }
+        }, 
+        "DELETE": {
+            "DeleteCategory": {
+                "id": "8",
+                "force": true    
+            }
+        },
+        "GET":{
+            "RetrieveACategory":{
+                "id":"12"
+            }
+        }
+    },
+    "Invalid": {
+        "POST": {
+            "CreateCategory": {
+                "id": "7"
+            },
+            "UpdateCategory": {
+                "name": "fatalname"            }
+        }, 
+        "DELETE": {
+            "DeleteCategory": {
+                "id": "8"   
+            }
+        },
+        "GET":{
+            "RetrieveACategory":{
+                "name":"fatalname"
+            }
+        }
+    }
+}
+

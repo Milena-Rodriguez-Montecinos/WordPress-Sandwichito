@@ -1,6 +1,8 @@
 {
     "users" : "wp/v2/users",
     "usersById" : "wp/v2/users/{id}",
+    "categories" : "wp/v2/categories",
+    "categoriesById" : "wp/v2/categories/{id}",
     "pages" : "wp/v2/pages",
     "pagesById" : "wp/v2/pages/{id}"
 }
