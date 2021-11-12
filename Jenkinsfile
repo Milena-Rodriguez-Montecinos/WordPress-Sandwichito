@@ -11,44 +11,41 @@ pipeline {
     }
 
     stage('Tests with Cucumber') {
-      parallel {
-        stage('User feature') {
-          post {
-            success {
-              publishHTML(allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'reports/', reportFiles: 'report.html', reportName: 'User feature')
-            }
 
-          }
+      parallel {
+
+        stage('User feature') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
               nodejs('Node16.4') {
                 sh 'npm run test -- --tags "@Users"'
               }
-
             }
-
-          }
+          } 
+          post {
+            always {
+              publishHTML(allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'reports/', reportFiles: 'report.html', reportName: 'Cucumber report1')
+            }
+           }               
         }
 
         stage('Pages feature') {
-          post {
-            success {
-              publishHTML(allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'reports/', reportFiles: 'report.html', reportName: 'Pages feature report')
-            }
-
-          }
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
               nodejs('Node16.4') {
                 sh 'npm run test -- --tags "@Pages"'
               }
-
             }
-
           }
+          post {
+            always {
+              publishHTML(allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'reports/', reportFiles: 'report.html', reportName: 'Cucumber report2')
+            }
+           }           
         }
       }
     }
+
 
     stage('Reports') {
         steps {
