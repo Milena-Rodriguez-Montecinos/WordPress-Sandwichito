@@ -11,12 +11,9 @@ pipeline {
     }
 
     stage('Tests with Cucumber') {
-                post {
-            always {
-              publishHTML(allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'reports/', reportFiles: 'report.html', reportName: 'Cucumber report')
-            }
-       }
+
       parallel {
+
         stage('User feature') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
@@ -24,7 +21,12 @@ pipeline {
                 sh 'npm run test -- --tags "@Users"'
               }
             }
-          }      
+          } 
+          post {
+            always {
+              publishHTML(allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'reports/', reportFiles: 'report.html', reportName: 'Cucumber report1')
+            }
+           }               
         }
 
         stage('Pages feature') {
@@ -35,12 +37,13 @@ pipeline {
               }
             }
           }
-
+          post {
+            always {
+              publishHTML(allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'reports/', reportFiles: 'report.html', reportName: 'Cucumber report2')
+            }
+           }           
         }
-        
       }
- 
-     
     }
 
 
