@@ -16,7 +16,8 @@ pipeline {
         stage('User feature') {
           steps {
               nodejs('Node16.4') {
-                sh 'npm run test -- --tags "@Users"'
+                sh 'npm run test -- --tags "@Users-CRUD"'
+                //sh 'npm run test -- --tags "@Users"'
               }  
           }
           post{
@@ -43,7 +44,8 @@ pipeline {
         stage('Pages feature') {
           steps {
               nodejs('Node16.4') {
-                sh 'npm run test -- --tags "@Pages"'
+                sh 'npm run test -- --tags "@PAGE-CRUD"'
+                //sh 'npm run test -- --tags "@Pages"'
               }  
           } 
           post{
@@ -55,7 +57,7 @@ pipeline {
                   keepAll: true,
                   reportDir: 'reports/',
                   reportFiles: 'report.html',
-                  reportName: 'Machine Learning report'
+                  reportName: 'Pages feature report'
                 ]
               emailext (to: 'titocaceres.carlos@gmail.com', 
                 subject: "Email Report from - '${env.JOB_NAME}' about the 'Pages feature'", 
