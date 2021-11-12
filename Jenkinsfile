@@ -94,7 +94,7 @@ pipeline {
 
   environment {
     DOCKER_HUB_USER = 'titosvir'
-    DOCKER_HUB = credentials('docker')
+    DOCKER_HUB = credentials('Docker')
     TAG_VERSION = '1.0'
   }
 
