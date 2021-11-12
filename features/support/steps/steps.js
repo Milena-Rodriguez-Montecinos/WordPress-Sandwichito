@@ -1,7 +1,7 @@
 import { Given, When, Then } from '@cucumber/cucumber';
 import { expect } from 'chai';
 import HttpRequestManager from '../../../src/common/api/http.request.manager'
-import payloads from '../../../src/resources/payloads/payloads.categories.json'
+import payloads from '../../../src/resources/payloads/payloads.user.json'
 import JsonAccess from './json.access'
 import errors from '../../../src/resources/errors.json'
 
