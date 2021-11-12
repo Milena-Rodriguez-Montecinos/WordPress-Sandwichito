@@ -21,10 +21,13 @@ pipeline {
       parallel {
         stage('User feature') {
           steps {
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
               nodejs('Node16.4') {
-                sh 'npm run test -- --tags "@Users-CRUD"'
-                //sh 'npm run test -- --tags "@Users"'
+                //sh 'npm run test -- --tags "@Users-CRUD"'
+                sh 'npm run test -- --tags "@Users"'
               }  
+            }
+
           }
           post{
             success {
@@ -49,10 +52,13 @@ pipeline {
 
         stage('Pages feature') {
           steps {
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
               nodejs('Node16.4') {
-                sh 'npm run test -- --tags "@PAGE-CRUD"'
-                //sh 'npm run test -- --tags "@Pages"'
+                //sh 'npm run test -- --tags "@PAGE-CRUD"'
+                sh 'npm run test -- --tags "@Pages"'
               }  
+            }            
+
           } 
           post{
             success {
