@@ -1,7 +1,7 @@
 import { After, Before } from "@cucumber/cucumber";
 import HttpRequestManager from "../../../src/common/api/http.request.manager";
 import endpoints from '../../../src/resources/endpoints.json'
-import payloads from '../../../src/resources/payloads/payloads.categories.js'
+import payloads from '../../../src/resources/payloads/payloads.user.json'
 import { expect } from 'chai';
 
 Before({tags: "@Category-Retrieve or @Category-Update or @Category-Delete or @Negative-Category-Retrieve or @Negative-Category-Create or @Negative-Category-Delete"}, async function () {

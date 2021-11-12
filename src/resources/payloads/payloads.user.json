@@ -10,12 +10,27 @@
                 "first_name": "Joselito",
                 "last_name": "Cansequito",
                 "email": "joselito_cansecus@email.com"
+            },
+            "CreateCategory": {
+                "name": "name"
+            },
+            "UpdateCategory": {
+                "id": "7"
             }
-        }, 
+        },
         "DELETE": {
             "DeleteUser": {
                 "force": true,
                 "reassign": 1
+            },
+            "DeleteCategory": {
+                "id": "8",
+                "force": true
+            }
+        },
+        "GET": {
+            "RetrieveACategory": {
+                "id": "12"
             }
         }
     },
@@ -62,7 +77,7 @@
                 "username": "Jose Canseco Canales",
                 "email": "jose_canseco_canales@email.com",
                 "password": " "
-            }, 
+            },
             "Update-Invalid-Email": {
                 "email": "123456abcdef&%$/("
             },
@@ -80,15 +95,29 @@
             },
             "Update-username": {
                 "username": "Jose Maria Canales"
+            },
+            "CreateCategory": {
+                "id": "7"
+            },
+            "UpdateCategory": {
+                "name": "fatalname"
             }
-        }, 
+        },
         "DELETE": {
-            "Delete-Without-Parameters": { },
+            "Delete-Without-Parameters": {},
             "Delete-Without-Force": {
                 "reassign": 1
             },
             "Delete-Without-reassing": {
                 "force": true
+            },
+            "DeleteCategory": {
+                "id": "8"
+            }
+        },
+        "GET":{
+            "RetrieveACategory":{
+                "name":"fatalname"
             }
         }
     }

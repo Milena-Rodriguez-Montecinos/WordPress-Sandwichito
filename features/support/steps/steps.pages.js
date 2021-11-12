@@ -56,8 +56,6 @@ When(
 Then(
     /^the status code should be (\d+) (.*)$/,
     function (statusCode, statusText) {
-        console.log(statusCode);
-        console.log(statusText);
         expect(_response.status).to.equal(statusCode);
         expect(_response.statusText).to.equal(statusText);
     }
